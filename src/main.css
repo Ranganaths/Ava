@@ -1,0 +1,20 @@
+.check-box .box{
+    -fx-background-color: transparent;
+    -fx-border-color: #01295F;
+    -fx-border-width: 2px;
+}
+
+.check-box {
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-padding: 10px;
+    -fx-label-padding: 0 0 0 25px;
+}
+
+#left-menu{
+    -fx-background-color:
+        linear-gradient(to bottom, #0b8793,#360033 );
+}
+
+.schedule-item{
+    -fx-background-color: rgba(255,255,255,0.15);
+}
