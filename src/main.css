@@ -17,4 +17,17 @@
 
 .schedule-item{
     -fx-background-color: rgba(255,255,255,0.15);
+    -fx-padding: 10px;
+}
+
+.schedule-time{
+    -fx-text-fill: #FFFFFF;
+}
+
+.schedule-name{
+    -fx-text-fill: #FFFFFF;
+}
+
+.btn-new-event{
+    -fx-background-color: transparent;
 }
