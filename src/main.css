@@ -1,3 +1,44 @@
+#menu-container{
+}
+
+#left-menu{
+    -fx-background-color:
+        linear-gradient(to bottom, #0b8793,#360033 );
+    -fx-padding: 60px 30px 30px 30px;
+}
+
+
+#date-container{
+    -fx-spacing: 30;
+}
+
+
+#date-day{
+    -fx-font-size: 107px;
+}
+
+#date-month{
+    -fx-font-size:40px;
+}
+
+#date-year{
+    -fx-font-size:40px;
+}
+
+#to-do-label{
+    -fx-font-size: 25px;
+    -fx-text-fill: white;
+}
+
+.to-do-item {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+}
+#right-menu{
+    -fx-background-color: white;
+    -fx-padding: 25px;
+}
+
 .check-box .box{
     -fx-background-color: transparent;
     -fx-border-color: #01295F;
@@ -10,24 +51,28 @@
     -fx-label-padding: 0 0 0 25px;
 }
 
-#left-menu{
-    -fx-background-color:
-        linear-gradient(to bottom, #0b8793,#360033 );
-}
 
+#schedule-label{
+    -fx-font-size: 25px;
+    -fx-text-fill: white;
+}
 .schedule-item{
     -fx-background-color: rgba(255,255,255,0.15);
     -fx-padding: 10px;
+    -fx-font-size: 15px;
 }
 
 .schedule-time{
-    -fx-text-fill: #FFFFFF;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
 }
 
 .schedule-name{
-    -fx-text-fill: #FFFFFF;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
 }
 
 .btn-new-event{
+    -fx-font-size: 25px;
     -fx-background-color: transparent;
 }
