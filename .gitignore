@@ -1,3 +1,4 @@
-main.css
-VoxFXML.fxml
-fontawesomefx-8.9.jar
+/node_modules
+/old-fxml
+token.json
+googleCalendar.json

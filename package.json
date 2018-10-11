@@ -1,0 +1,25 @@
+{
+  "name": "vox-agenda",
+  "version": "1.0.0",
+  "description": "Voice Controlled Calendar Assistant",
+  "main": "./public/main.js",
+  "dependencies": {
+    "electron": "^3.0.4",
+    "googleapis": "^27.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron . ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmcnab57/Vox-Agenda.git"
+  },
+  "author": "Jordy McNab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmcnab57/Vox-Agenda/issues"
+  },
+  "homepage": "https://github.com/jmcnab57/Vox-Agenda#readme"
+}
