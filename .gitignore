@@ -1,4 +1,4 @@
-/node_modules
 /old-fxml
-token.json
-googleCalendar.json
+/.vscode
+keys.py
+text.log
