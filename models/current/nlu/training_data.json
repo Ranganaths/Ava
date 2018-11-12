@@ -1,0 +1,1210 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "bye",
+        "text": "Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye Ava"
+      },
+      {
+        "intent": "bye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "bye",
+        "text": "Goodbye Ava"
+      },
+      {
+        "intent": "bye",
+        "text": "See you later"
+      },
+      {
+        "intent": "bye",
+        "text": "Talk to you later"
+      },
+      {
+        "intent": "bye",
+        "text": "See you later Ava"
+      },
+      {
+        "intent": "bye",
+        "text": "Talk to you later Ava"
+      },
+      {
+        "intent": "bye",
+        "text": "Goodbye friend"
+      },
+      {
+        "intent": "bye",
+        "text": "bye for now"
+      },
+      {
+        "intent": "bye",
+        "text": "catch you later"
+      },
+      {
+        "intent": "bye",
+        "text": "gotta go"
+      },
+      {
+        "intent": "bye",
+        "text": "See you"
+      },
+      {
+        "intent": "bye",
+        "text": "goodnight"
+      },
+      {
+        "intent": "bye",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "bye",
+        "text": "i'm off"
+      },
+      {
+        "intent": "bye",
+        "text": "see you later alligator"
+      },
+      {
+        "intent": "bye",
+        "text": "we'll speak soon"
+      },
+      {
+        "intent": "bye",
+        "text": "later"
+      },
+      {
+        "intent": "gratitude",
+        "text": "Thanks"
+      },
+      {
+        "intent": "gratitude",
+        "text": "Thank you"
+      },
+      {
+        "intent": "gratitude",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "gratitude",
+        "text": "Thanks Ava"
+      },
+      {
+        "intent": "gratitude",
+        "text": "Thanks for that"
+      },
+      {
+        "intent": "gratitude",
+        "text": "cheers"
+      },
+      {
+        "intent": "gratitude",
+        "text": "cheers bro"
+      },
+      {
+        "intent": "gratitude",
+        "text": "ok thanks!"
+      },
+      {
+        "intent": "gratitude",
+        "text": "perfect thank you"
+      },
+      {
+        "intent": "gratitude",
+        "text": "thanks a bunch for everything"
+      },
+      {
+        "intent": "gratitude",
+        "text": "thanks for the help"
+      },
+      {
+        "intent": "gratitude",
+        "text": "thanks a lot"
+      },
+      {
+        "intent": "gratitude",
+        "text": "amazing, thanks"
+      },
+      {
+        "intent": "gratitude",
+        "text": "cool, thanks"
+      },
+      {
+        "intent": "gratitude",
+        "text": "cool thank you"
+      },
+      {
+        "intent": "gratitude",
+        "text": "right on"
+      },
+      {
+        "intent": "gratitude",
+        "text": "perfect, thanks"
+      },
+      {
+        "intent": "gratitude",
+        "text": "perfect, thank you"
+      },
+      {
+        "intent": "gratitude",
+        "text": "I appreciate it"
+      },
+      {
+        "intent": "gratitude",
+        "text": "I'm grateful"
+      },
+      {
+        "intent": "gratitude",
+        "text": "Greatly apprciated"
+      },
+      {
+        "intent": "gratitude",
+        "text": "It's appreciated"
+      },
+      {
+        "intent": "gratitude",
+        "text": "gratitude"
+      },
+      {
+        "intent": "gratitude",
+        "text": "thanks very much"
+      },
+      {
+        "intent": "confirm",
+        "text": "yes"
+      },
+      {
+        "intent": "confirm",
+        "text": "correct"
+      },
+      {
+        "intent": "confirm",
+        "text": "that's right"
+      },
+      {
+        "intent": "confirm",
+        "text": "yes sure"
+      },
+      {
+        "intent": "confirm",
+        "text": "sure"
+      },
+      {
+        "intent": "confirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "confirm",
+        "text": "for sure"
+      },
+      {
+        "intent": "confirm",
+        "text": "yes yes yes"
+      },
+      {
+        "intent": "confirm",
+        "text": "definitely"
+      },
+      {
+        "intent": "confirm",
+        "text": "that's correct"
+      },
+      {
+        "intent": "confirm",
+        "text": "right"
+      },
+      {
+        "intent": "confirm",
+        "text": "correct"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "Alice",
+            "entity": "name"
+          }
+        ],
+        "text": "My name is Alice"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "Josh",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Josh"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "Lucy",
+            "entity": "name"
+          }
+        ],
+        "text": "I'm Lucy"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "Greg",
+            "entity": "name"
+          }
+        ],
+        "text": "People call me Greg"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "David",
+            "entity": "name"
+          }
+        ],
+        "text": "It's David"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 23,
+            "end": 26,
+            "value": "Amy",
+            "entity": "name"
+          }
+        ],
+        "text": "Usually people call me Amy"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "John",
+            "entity": "name"
+          }
+        ],
+        "text": "My name is John"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "Sam",
+            "entity": "name"
+          }
+        ],
+        "text": "You can call me Sam"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "Linda",
+            "entity": "name"
+          }
+        ],
+        "text": "Please call me Linda"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "Tom",
+            "entity": "name"
+          }
+        ],
+        "text": "Name name is Tom"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Richard",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Richard"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
+            "value": "Tracy",
+            "entity": "name"
+          }
+        ],
+        "text": "I'm Tracy"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "Sally",
+            "entity": "name"
+          }
+        ],
+        "text": "Call me Sally"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Philipp",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Philipp"
+      },
+      {
+        "intent": "user_name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Charlie",
+            "entity": "name"
+          }
+        ],
+        "text": "I am Charlie"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "i'm looking for a place to eat"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I want to grab lunch"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I am searching for a dinner spot"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I'm hungry"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I am hungry"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "north",
+            "entity": "location"
+          }
+        ],
+        "text": "i'm looking for a place in the north of town"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "show me chinese restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "value": "centre",
+            "entity": "location"
+          }
+        ],
+        "text": "show me a mexican place in the centre"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i am looking for an indian spot"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "search for restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "west",
+            "entity": "location"
+          }
+        ],
+        "text": "anywhere in the west"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "18328",
+            "entity": "location"
+          }
+        ],
+        "text": "anywhere near 18328"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "asian fusion",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I am looking for asian fusion food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "29432",
+            "entity": "location"
+          }
+        ],
+        "text": "I am looking a restaurant in 29432"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 17,
+            "value": "bbq",
+            "entity": "cuisine"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "value": "here",
+            "entity": "location"
+          }
+        ],
+        "text": "Is there good bbq around here"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 19,
+            "end": 28,
+            "value": "fast food",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "What's the closest fast food"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "What should eat"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "any good food around here"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "whats the best place to eat"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "thai",
+            "entity": "cuisine"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "value": "ballard",
+            "entity": "location"
+          }
+        ],
+        "text": "whats the best thai food in ballard"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 29,
+            "value": "now",
+            "entity": "time"
+          }
+        ],
+        "text": "what restaurants are open now"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "thai",
+            "entity": "cuisine"
+          },
+          {
+            "start": 31,
+            "end": 40,
+            "value": "right now",
+            "entity": "time"
+          }
+        ],
+        "text": "what thai restaurants are open right now"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "current",
+            "entity": "time"
+          }
+        ],
+        "text": "What's the current weather"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "today's",
+            "entity": "time"
+          }
+        ],
+        "text": "What is today's weather"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "sunny",
+            "entity": "weather"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "value": "today",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be sunny today"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "rainy",
+            "entity": "weather"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "value": "today",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be rainy today"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "cloudy",
+            "entity": "weather"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "value": "today",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be cloudy today"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "tomorrow's",
+            "entity": "time"
+          }
+        ],
+        "text": "What is tomorrow's weather"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "friday's",
+            "entity": "time"
+          }
+        ],
+        "text": "What is friday's weather"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "sunny",
+            "entity": "weather"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "value": "friday",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be sunny friday"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "cloudy",
+            "entity": "weather"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "value": "monday",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be cloudy monday"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "rainy",
+            "entity": "weather"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "value": "tuesday",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be rainy tuesday"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 36,
+            "end": 44,
+            "value": "tomorrow",
+            "entity": "time"
+          }
+        ],
+        "text": "What's the weather going to be like tomorrow"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 36,
+            "end": 44,
+            "value": "thursday",
+            "entity": "time"
+          }
+        ],
+        "text": "What's the weather going to be like thursday"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "current",
+            "entity": "time"
+          }
+        ],
+        "text": "What's the current temperature"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "tonight",
+            "entity": "time"
+          }
+        ],
+        "text": "What's the temperature tonight"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "What is the temperature"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "Do I need a jacket"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "Is it cold outside"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "tonight",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be cold tonight"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "tonight",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be hot tonight"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "Is it warm outside"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "How cold is it"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "How warm is it"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "Bellevue",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the temperature in Bellevue"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 11,
+            "end": 24,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ],
+        "text": "How hot is San Francisco"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "ounces",
+            "entity": "unit"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "pound",
+            "entity": "unit"
+          }
+        ],
+        "text": "How many ounces in a pound"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Five",
+            "entity": "ammount"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "value": "cups",
+            "entity": "unit"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "value": "liters",
+            "entity": "unit"
+          }
+        ],
+        "text": "Five cups is how many liters"
+      },
+      {
+        "intent": "status",
+        "text": "How are you?"
+      },
+      {
+        "intent": "status",
+        "text": "How are you doing?"
+      },
+      {
+        "intent": "status",
+        "text": "How are you feeling?"
+      },
+      {
+        "intent": "status",
+        "text": "How's it going?"
+      },
+      {
+        "intent": "status",
+        "text": "What's up?"
+      },
+      {
+        "intent": "status",
+        "text": "You doing ok?"
+      },
+      {
+        "intent": "status",
+        "text": "You doing alright?"
+      },
+      {
+        "intent": "word_meaning",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "carrot",
+            "entity": "key"
+          }
+        ],
+        "text": "Definition of the word carrot"
+      },
+      {
+        "intent": "word_meaning",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "trust",
+            "entity": "key"
+          }
+        ],
+        "text": "Define trust"
+      },
+      {
+        "intent": "word_meaning",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "sand",
+            "entity": "key"
+          }
+        ],
+        "text": "Define the word sand"
+      },
+      {
+        "intent": "word_meaning",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "smart",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the meaning of the word smart"
+      },
+      {
+        "intent": "word_meaning",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "machine",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of machine"
+      },
+      {
+        "intent": "music_control",
+        "text": "play music"
+      },
+      {
+        "intent": "music_control",
+        "text": "play [Despacito][title]"
+      },
+      {
+        "intent": "music_control",
+        "text": "play [Beyonce][artist]"
+      },
+      {
+        "intent": "music_control",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "trust",
+            "entity": "title"
+          },
+          {
+            "start": 14,
+            "end": 26,
+            "value": "brent faiyaz",
+            "entity": "artist"
+          }
+        ],
+        "text": "play trust by brent faiyaz"
+      },
+      {
+        "intent": "music_control",
+        "entities": [
+          {
+            "start": 14,
+            "end": 29,
+            "value": "slowing it down",
+            "entity": "playlist"
+          }
+        ],
+        "text": "play playlist slowing it down"
+      },
+      {
+        "intent": "music_control",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "random",
+            "entity": "type"
+          }
+        ],
+        "text": "play a random song"
+      },
+      {
+        "intent": "music_control",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "turn up",
+            "entity": "type"
+          }
+        ],
+        "text": "lets turn up"
+      },
+      {
+        "intent": "music_control",
+        "text": "i need music"
+      },
+      {
+        "intent": "music_control",
+        "entities": [
+          {
+            "start": 7,
+            "end": 20,
+            "value": "concentration",
+            "entity": "type"
+          }
+        ],
+        "text": "i need concentration music"
+      },
+      {
+        "intent": "music_control",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "party",
+            "entity": "type"
+          }
+        ],
+        "text": "we need party music"
+      },
+      {
+        "intent": "music_control",
+        "text": "put on some music"
+      },
+      {
+        "intent": "music_control",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "jazz",
+            "entity": "type"
+          }
+        ],
+        "text": "put on some jazz"
+      },
+      {
+        "intent": "finance_search",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "AAPL",
+            "entity": "ticker"
+          }
+        ],
+        "text": "what's the current price of AAPL"
+      },
+      {
+        "intent": "finance_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "GE",
+            "entity": "ticker"
+          }
+        ],
+        "text": "how's GE performing"
+      },
+      {
+        "intent": "finance_search",
+        "text": "how's the market doing?"
+      },
+      {
+        "intent": "finance_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 10,
+            "value": "bitcoin",
+            "entity": "ticker"
+          }
+        ],
+        "text": "is bitcoin up or down?"
+      },
+      {
+        "intent": "get_time",
+        "text": "What time is it?"
+      },
+      {
+        "intent": "get_time",
+        "text": "Can you give me the time?"
+      },
+      {
+        "intent": "get_time",
+        "text": "Can you tell me the time?"
+      },
+      {
+        "intent": "get_time",
+        "text": "What is the time?"
+      },
+      {
+        "intent": "get_time",
+        "text": "What's the current time?"
+      },
+      {
+        "intent": "get_time",
+        "text": "what's the time?"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

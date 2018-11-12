@@ -1,32 +1,38 @@
+
 from os import path
 from pocketsphinx import pocketsphinx
-import speech_recognition
-import pyaudio as pAud
+from textblob import TextBlob
 from pygame import mixer
-import boto3
 from keys import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
+from rasa_nlu.model import Interpreter
+import json
 import settings
+import speech_recognition
+import boto3
+import pyaudio as pAudio
+import time
+
+interpreter = Interpreter.load("./models/current/nlu")
+pyaudio = pAudio.PyAudio()
+stream = pyaudio.open(format=pAudio.paInt16, channels=1,
+                      rate=16000, input=True, frames_per_buffer=1024)
+
+config = pocketsphinx.Decoder.default_config()
+config.set_string('-hmm', path.join(settings.MODEL_DIR, 'en-us/en-us'))
+config.set_string('-dict', path.join(settings.MODEL_DIR,
+                                     'en-us/cmudict-en-us.dict'))
+config.set_string('-keyphrase', key_phrase)
+config.set_float('-kws_threshold', 1)
+config.set_string('-logfn', 'text.log')
+decoder = pocketsphinx.Decoder(config)
 
 
 def listen_for_wake(key_phrase):
-    config = pocketsphinx.Decoder.default_config()
-    config.set_string('-hmm', path.join(settings.MODEL_DIR, 'en-us/en-us'))
-    config.set_string('-dict', path.join(settings.MODEL_DIR,
-                                         'en-us/cmudict-en-us.dict'))
-    config.set_string('-keyphrase', key_phrase)
-    config.set_float('-kws_threshold', 1)
-    config.set_string('-logfn', 'text.log')
 
-    pyaudio = pAud.PyAudio()
-    stream = pyaudio.open(format=pAud.paInt16, channels=1,
-                          rate=16000, input=True, frames_per_buffer=1024)
     stream.start_stream()
-
-    decoder = pocketsphinx.Decoder(config)
     decoder.start_utt()
     mixer.init()
     print("Waiting for wakeup ...")
-
     while True:
         buf = stream.read(1024)
         if buf:
@@ -90,9 +96,15 @@ def listen_for_command():
             print("No input received ...")
     try:
         print("Decoding...")
-        print("Hypothesis: ", sr.recognize_sphinx(audio))
-    except:
-        print("FAIL")
+        hyp = sr.recognize_sphinx(audio)
+        process_intent(hyp)
+    except Exception as e:
+        print(e)
+
+
+def process_intent(hypothesis):
+    result = interpreter.parse(hypothesis)
+    print(result['intent']['name'])
 
 
 if __name__ == "__main__":
