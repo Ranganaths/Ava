@@ -1,17 +1,15 @@
-
 from os import path
 from pocketsphinx import pocketsphinx
 from textblob import TextBlob
 from pygame import mixer
 from rasa_nlu.model import Interpreter
-import vox_api_keys as keys
+import ava_api_keys as keys
 import pyaudio as pAudio
 import json
-import vox_settings as settings
-import vox_actions as actions
+import ava_settings as settings
+import ava_actions as actions
 import speech_recognition
 import boto3
-
 import time
 
 interpreter = Interpreter.load("./models/current/nlu")
