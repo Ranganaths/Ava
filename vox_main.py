@@ -3,13 +3,15 @@ from os import path
 from pocketsphinx import pocketsphinx
 from textblob import TextBlob
 from pygame import mixer
-from keys import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
 from rasa_nlu.model import Interpreter
+import vox_api_keys as keys
+import pyaudio as pAudio
 import json
-import settings
+import vox_settings as settings
+import vox_actions as actions
 import speech_recognition
 import boto3
-import pyaudio as pAudio
+
 import time
 
 interpreter = Interpreter.load("./models/current/nlu")
@@ -18,16 +20,16 @@ stream = pyaudio.open(format=pAudio.paInt16, channels=1,
                       rate=16000, input=True, frames_per_buffer=1024)
 
 config = pocketsphinx.Decoder.default_config()
-config.set_string('-hmm', path.join(settings.MODEL_DIR, 'en-us/en-us'))
-config.set_string('-dict', path.join(settings.MODEL_DIR,
+config.set_string('-hmm', path.join(settings.SPHINX_MODEL_DIR, 'en-us/en-us'))
+config.set_string('-dict', path.join(settings.SPHINX_MODEL_DIR,
                                      'en-us/cmudict-en-us.dict'))
-config.set_string('-keyphrase', key_phrase)
+config.set_string('-keyphrase', settings.WAKE_PHRASE)
 config.set_float('-kws_threshold', 1)
 config.set_string('-logfn', 'text.log')
 decoder = pocketsphinx.Decoder(config)
 
 
-def listen_for_wake(key_phrase):
+def listen_for_wake():
 
     stream.start_stream()
     decoder.start_utt()
@@ -54,8 +56,8 @@ def listen_for_wake(key_phrase):
 
 def get_tts(text, file_name):
 
-    polly_client = boto3.Session(aws_access_key_id=AWS_ACCESS_KEY_ID,
-                                 aws_secret_access_key=AWS_SECRET_ACCESS_KEY, region_name='us-west-2').client('polly')
+    polly_client = boto3.Session(aws_access_key_id=keys.AWS_ACCESS_KEY_ID,
+                                 aws_secret_access_key=keys.AWS_SECRET_ACCESS_KEY, region_name='us-west-2').client('polly')
 
     response = polly_client.synthesize_speech(VoiceId='Joanna',
                                               OutputFormat='mp3',
