@@ -1,9 +1,5 @@
 <!--- Make sure to update this training data file with more training examples from https://forum.rasa.com/t/grab-the-nlu-training-dataset-and-starter-packs/903 -->
 
-## regex:zipcode
-
-- [0-9]{5}
-
 ## intent:bye
 
 - Bye
@@ -114,6 +110,7 @@
 
 ## intent:get_weather
 
+- What's the weather like
 - What's the [current](time) weather
 - What is [today's](time) weather
 - Will it be [sunny](weather) [today](time)
@@ -126,6 +123,16 @@
 - Will it be [rainy](weather) [tuesday](time)
 - What's the weather going to be like [tomorrow](time)
 - What's the weather going to be like [thursday](time)
+- What's the weather in [San Francisco](location)
+- Is it [raining](weather)
+- Is it sunny in [Los Angeles](location)
+- What will the weather be on [friday](time)
+- What is [New York's](location) weather
+- What's [Miami's](location) weather [sunday](time)
+- What's the weather [tomorrow](time) in [San Francisco](location)
+- What's the weather [tomorrow](time) in zipcode [98119](location)
+- Is it cloudy in zipcode [94608](location)
+- What's the weather like in areacode [94806](location)
 
 ## intent:get_temperature
 
@@ -141,6 +148,7 @@
 - How warm is it
 - What's the temperature in [Bellevue](location)
 - How hot is [San Francisco](location)
+- Whats the current temperature in [98109](location)
 
 ## intent:unit_conversion
 

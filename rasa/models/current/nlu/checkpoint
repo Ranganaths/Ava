@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\Jordy\\Documents\\GitHub\\Vox-Agenda\\models\\current\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
-all_model_checkpoint_paths: "C:\\Users\\Jordy\\Documents\\GitHub\\Vox-Agenda\\models\\current\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
+model_checkpoint_path: "C:\\Users\\Jordy\\Documents\\GitHub\\Ava\\rasa\\models\\current\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "C:\\Users\\Jordy\\Documents\\GitHub\\Ava\\rasa\\models\\current\\nlu\\intent_classifier_tensorflow_embedding.ckpt"

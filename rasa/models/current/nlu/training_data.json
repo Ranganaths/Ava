@@ -618,6 +618,28 @@
         "text": "what thai restaurants are open right now"
       },
       {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "value": "here",
+            "entity": "location"
+          }
+        ],
+        "text": "is there any good indian around here"
+      },
+      {
+        "intent": "get_weather",
+        "text": "What's the weather like"
+      },
+      {
         "intent": "get_weather",
         "entities": [
           {
@@ -798,6 +820,96 @@
         "text": "What's the weather going to be like thursday"
       },
       {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 35,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather in San Francisco"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "raining",
+            "entity": "weather"
+          }
+        ],
+        "text": "Is it raining"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "Los Angeles",
+            "entity": "location"
+          }
+        ],
+        "text": "Is it sunny in Los Angeles"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 28,
+            "end": 34,
+            "value": "friday",
+            "entity": "time"
+          }
+        ],
+        "text": "What will the weather be on friday"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "New York's",
+            "entity": "location"
+          }
+        ],
+        "text": "What is New York's weather"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "Miami's",
+            "entity": "location"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "value": "sunday",
+            "entity": "time"
+          }
+        ],
+        "text": "What's Miami's weather sunday"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "94608",
+            "entity": "location"
+          }
+        ],
+        "text": "Is it cloudy in zipcode 94608"
+      },
+      {
         "intent": "get_temperature",
         "entities": [
           {
@@ -892,6 +1004,18 @@
           }
         ],
         "text": "How hot is San Francisco"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 32,
+            "end": 37,
+            "value": "98109",
+            "entity": "location"
+          }
+        ],
+        "text": "Whats the curren temperature in 98109"
       },
       {
         "intent": "unit_conversion",
