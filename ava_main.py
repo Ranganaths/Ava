@@ -7,10 +7,9 @@ from pygame import mixer
 import ava_api_keys as keys
 import pyaudio as pAudio
 import json
-import ava_actions as actions
 import speech_recognition
 import boto3
-from ava_actions import AvaActions
+from ava_skills import AvaSkills
 
 
 class Ava (AvaSkills):
