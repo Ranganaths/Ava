@@ -4,3 +4,6 @@ POLLY_SECRET_ACCESS_KEY = ""
 
 # Open Weather Map Key
 OWM_DEFAULT_KEY = ""
+
+# Zomato API Key for restaurant dat
+ZOMATO_KEY = ""

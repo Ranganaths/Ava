@@ -82,7 +82,7 @@
 - I am [Philipp](name)
 - I am [Charlie](name)
 
-## intent:restaurant_search
+## intent:get_restaurant
 
 - i'm looking for a place to eat
 - I want to grab lunch
@@ -143,6 +143,10 @@
 - Is it cold outside
 - Will it be cold [tonight](time)
 - Will it be hot [tonight](time)
+- What is [tomorrow's](time) temperature
+- What is [friday's](time) temperature
+- What is the temperature on [saturday](time)
+- What is the temperature on [saturday](time) in [Houston](location)
 - Is it warm outside
 - How cold is it
 - How warm is it
@@ -150,12 +154,12 @@
 - How hot is [San Francisco](location)
 - Whats the current temperature in [98109](location)
 
-## intent:unit_conversion
+## intent:convert_unit
 
 - How many [ounces](unit) in a [pound](unit)
 - [Five](ammount) [cups](unit) is how many [liters](unit)
 
-## intent:status
+## intent:get_status
 
 - How are you?
 - How are you doing?
@@ -165,7 +169,7 @@
 - You doing ok?
 - You doing alright?
 
-## intent:word_meaning
+## intent:get_defenition
 
 - Definition of the word [carrot](key)
 - Define [trust](key)
@@ -173,20 +177,26 @@
 - What's the meaning of the word [smart](key)
 - What is the meaning of [machine](key)
 
-## intent:music_control
+## intent:get_music
 
-- play music
-- play [Despacito][title]
-- play [Beyonce][artist]
-- play [trust](title) by [brent faiyaz](artist)
-- play playlist [slowing it down](playlist)
-- play a [random](type) song
+- [play](action) music
+- [play](action) [Despacito][title]
+- [play](action) [Beyonce][artist]
+- [play](action) [trust](title) by [brent faiyaz](artist)
+- [play](action) playlist [slowing it down](playlist)
+- [play](action) a [random](type) song
 - lets [turn up](type)
 - i need music
 - i need [concentration](type) music
 - we need [party](type) music
 - put on some music
 - put on some [jazz](type)
+- [pause](action) the music
+- [pause](action) music
+- [next](action) song
+- [play](action) [next](action) song
+- [previous](action) song
+- [play](action) [previous](action) song
 
 ## intent:finance_search
 
@@ -235,4 +245,9 @@
 
 ## intent:get_free_times
 
-## intent:get_appointments -->
+## intent:get_appointments
+
+## intent:get_news
+
+## intent:manage_project
+-->

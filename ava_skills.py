@@ -6,8 +6,15 @@ import datetime
 import re
 
 
-class AvaActions():
-    def get_weather(self, result):
+class AvaSkills():
+    def get_weather(self, result, source="weather"):
+        # Makes use of the Open Weather Map to retrieve weather data. The function has
+        # default parameters that will get modified depending on the entities result received
+        # from the calling entity processing function. A variable source is added to allow
+        # get_temperature to use the same function as they are only differ on the return statement.
+        # With the source variable set we know the calling function is get_temperature and can
+        # conditionally change the return to just temperature data.
+
         weather = ""
         date = datetime.datetime.now()
         location = settings.HOME_ZIPCODE
@@ -64,6 +71,10 @@ class AvaActions():
             except Exception as e:
                 print("Error in getting json from weather api response...")
             else:
+                # Forecast endpoint vs Weather endpoint return differently structured data. Therefor we need to conditionally
+                # set our return response based on which API endpoint was hit. The forecast endpoint requires looping through
+                # a lit to get the appopriate weather forecast item that corresponds to the correct date reuqested by the user.
+
                 if(endpoint == "forecast"):
                     for item in data["list"]:
                         parsed = dateparser.parse(
@@ -71,16 +82,33 @@ class AvaActions():
                         if(parsed < date):
                             continue
                         else:
+                            if(source == "temperature"):
+                                temp = round(item["main"]["temp"])
+                                response["tts"] = f"The forecasted temperature is {temp} degrees"
+                                response["file"] = f"forecast_temperature_{temp}.mp3"
+                                return response
+
                             description = item["weather"][0]["description"]
                             temp = round(item["main"]["temp"])
-                            response["tts"] = f"{description} with temperature around {temp}"
-                            response["file"] = description.replace(
+                            response["tts"] = f"Forecast: {description} with temperature around {temp} degrees"
+                            response["file"] = "forecast_" + description.replace(
                                 " ", "_") + f"_{temp}.mp3"
                             return response
                 else:
+                    if(source == "temperature"):
+                        temp = round(data["main"]["temp"])
+                        response["tts"] = f"The temperature is around {temp} degrees"
+                        response["file"] = f"temperature_{temp}.mp3"
+                        return response
                     description = data["weather"][0]["description"]
                     temp = round(data["main"]["temp"])
-                    response["tts"] = f"{description} with temperature around {temp}"
+                    response["tts"] = f"Looks like {description} with temperature around {temp} degrees"
                     response["file"] = description.replace(
                         " ", "_") + f"_{temp}.mp3"
                     return response
+
+    def get_temperature(self, result):
+        # get_temperature is an extention of the get_weather action. Rather than create a new similar function
+        # we can can call get_weather with an extra parameter that will allow get_weather to return the appropriate
+        # values based on who the original caller was.
+        return self.get_weather(result, "temperature")

@@ -13,7 +13,7 @@ import boto3
 from ava_actions import AvaActions
 
 
-class Ava (AvaActions):
+class Ava (AvaSkills):
 
     def __init__(self):
         self.interpreter = Interpreter.load(settings.RASA_MODEL_DIR)

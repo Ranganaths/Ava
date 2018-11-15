@@ -402,27 +402,27 @@
         "text": "I am Charlie"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "text": "i'm looking for a place to eat"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "text": "I want to grab lunch"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "text": "I am searching for a dinner spot"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "text": "I'm hungry"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "text": "I am hungry"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 31,
@@ -434,7 +434,7 @@
         "text": "i'm looking for a place in the north of town"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 8,
@@ -446,7 +446,7 @@
         "text": "show me chinese restaurants"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 10,
@@ -464,7 +464,7 @@
         "text": "show me a mexican place in the centre"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 20,
@@ -476,11 +476,11 @@
         "text": "i am looking for an indian spot"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "text": "search for restaurants"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 16,
@@ -492,7 +492,7 @@
         "text": "anywhere in the west"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 14,
@@ -504,7 +504,7 @@
         "text": "anywhere near 18328"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 17,
@@ -516,7 +516,7 @@
         "text": "I am looking for asian fusion food"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 29,
@@ -528,7 +528,7 @@
         "text": "I am looking a restaurant in 29432"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 14,
@@ -546,7 +546,7 @@
         "text": "Is there good bbq around here"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 19,
@@ -558,19 +558,19 @@
         "text": "What's the closest fast food"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "text": "What should eat"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "text": "any good food around here"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "text": "whats the best place to eat"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 15,
@@ -588,7 +588,7 @@
         "text": "whats the best thai food in ballard"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 26,
@@ -600,7 +600,7 @@
         "text": "what restaurants are open now"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 5,
@@ -618,7 +618,7 @@
         "text": "what thai restaurants are open right now"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 18,
@@ -901,6 +901,42 @@
         "intent": "get_weather",
         "entities": [
           {
+            "start": 19,
+            "end": 27,
+            "value": "tomorrow",
+            "entity": "time"
+          },
+          {
+            "start": 31,
+            "end": 44,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather tomorrow in San Francisco"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": "tomorrow",
+            "entity": "time"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "98119",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather tomorrow in zipcode 98119"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
             "start": 24,
             "end": 29,
             "value": "94608",
@@ -908,6 +944,18 @@
           }
         ],
         "text": "Is it cloudy in zipcode 94608"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "94806",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather like in areacode 94806"
       },
       {
         "intent": "get_temperature",
@@ -971,6 +1019,60 @@
       },
       {
         "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "tomorrow's",
+            "entity": "time"
+          }
+        ],
+        "text": "What is tomorrow's temperature"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "friday's",
+            "entity": "time"
+          }
+        ],
+        "text": "What is friday's temperature"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "value": "saturday",
+            "entity": "time"
+          }
+        ],
+        "text": "What is the temperature on saturday"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "value": "saturday",
+            "entity": "time"
+          },
+          {
+            "start": 39,
+            "end": 46,
+            "value": "Houston",
+            "entity": "location"
+          }
+        ],
+        "text": "What is the temperature on saturday in Houston"
+      },
+      {
+        "intent": "get_temperature",
         "text": "Is it warm outside"
       },
       {
@@ -1009,16 +1111,16 @@
         "intent": "get_temperature",
         "entities": [
           {
-            "start": 32,
-            "end": 37,
+            "start": 33,
+            "end": 38,
             "value": "98109",
             "entity": "location"
           }
         ],
-        "text": "Whats the curren temperature in 98109"
+        "text": "Whats the current temperature in 98109"
       },
       {
-        "intent": "unit_conversion",
+        "intent": "convert_unit",
         "entities": [
           {
             "start": 9,
@@ -1036,7 +1138,7 @@
         "text": "How many ounces in a pound"
       },
       {
-        "intent": "unit_conversion",
+        "intent": "convert_unit",
         "entities": [
           {
             "start": 0,
@@ -1060,35 +1162,35 @@
         "text": "Five cups is how many liters"
       },
       {
-        "intent": "status",
+        "intent": "get_status",
         "text": "How are you?"
       },
       {
-        "intent": "status",
+        "intent": "get_status",
         "text": "How are you doing?"
       },
       {
-        "intent": "status",
+        "intent": "get_status",
         "text": "How are you feeling?"
       },
       {
-        "intent": "status",
+        "intent": "get_status",
         "text": "How's it going?"
       },
       {
-        "intent": "status",
+        "intent": "get_status",
         "text": "What's up?"
       },
       {
-        "intent": "status",
+        "intent": "get_status",
         "text": "You doing ok?"
       },
       {
-        "intent": "status",
+        "intent": "get_status",
         "text": "You doing alright?"
       },
       {
-        "intent": "word_meaning",
+        "intent": "get_defenition",
         "entities": [
           {
             "start": 23,
@@ -1100,7 +1202,7 @@
         "text": "Definition of the word carrot"
       },
       {
-        "intent": "word_meaning",
+        "intent": "get_defenition",
         "entities": [
           {
             "start": 7,
@@ -1112,7 +1214,7 @@
         "text": "Define trust"
       },
       {
-        "intent": "word_meaning",
+        "intent": "get_defenition",
         "entities": [
           {
             "start": 16,
@@ -1124,7 +1226,7 @@
         "text": "Define the word sand"
       },
       {
-        "intent": "word_meaning",
+        "intent": "get_defenition",
         "entities": [
           {
             "start": 31,
@@ -1136,7 +1238,7 @@
         "text": "What's the meaning of the word smart"
       },
       {
-        "intent": "word_meaning",
+        "intent": "get_defenition",
         "entities": [
           {
             "start": 23,
@@ -1148,20 +1250,50 @@
         "text": "What is the meaning of machine"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "play",
+            "entity": "action"
+          }
+        ],
         "text": "play music"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "play",
+            "entity": "action"
+          }
+        ],
         "text": "play [Despacito][title]"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "play",
+            "entity": "action"
+          }
+        ],
         "text": "play [Beyonce][artist]"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
         "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "play",
+            "entity": "action"
+          },
           {
             "start": 5,
             "end": 10,
@@ -1178,8 +1310,14 @@
         "text": "play trust by brent faiyaz"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
         "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "play",
+            "entity": "action"
+          },
           {
             "start": 14,
             "end": 29,
@@ -1190,8 +1328,14 @@
         "text": "play playlist slowing it down"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
         "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "play",
+            "entity": "action"
+          },
           {
             "start": 7,
             "end": 13,
@@ -1202,7 +1346,7 @@
         "text": "play a random song"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
         "entities": [
           {
             "start": 5,
@@ -1214,11 +1358,11 @@
         "text": "lets turn up"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
         "text": "i need music"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
         "entities": [
           {
             "start": 7,
@@ -1230,7 +1374,7 @@
         "text": "i need concentration music"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
         "entities": [
           {
             "start": 8,
@@ -1242,11 +1386,11 @@
         "text": "we need party music"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
         "text": "put on some music"
       },
       {
-        "intent": "music_control",
+        "intent": "get_music",
         "entities": [
           {
             "start": 12,
@@ -1256,6 +1400,90 @@
           }
         ],
         "text": "put on some jazz"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "pause",
+            "entity": "action"
+          }
+        ],
+        "text": "pause the music"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "pause",
+            "entity": "action"
+          }
+        ],
+        "text": "pause music"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "next",
+            "entity": "action"
+          }
+        ],
+        "text": "next song"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "play",
+            "entity": "action"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "value": "next",
+            "entity": "action"
+          }
+        ],
+        "text": "play next song"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "previous",
+            "entity": "action"
+          }
+        ],
+        "text": "previous song"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "play",
+            "entity": "action"
+          },
+          {
+            "start": 5,
+            "end": 13,
+            "value": "previous",
+            "entity": "action"
+          }
+        ],
+        "text": "play previous song"
       },
       {
         "intent": "finance_search",
@@ -1322,12 +1550,7 @@
         "text": "what's the time?"
       }
     ],
-    "regex_features": [
-      {
-        "name": "zipcode",
-        "pattern": "[0-9]{5}"
-      }
-    ],
+    "regex_features": [],
     "lookup_tables": [],
     "entity_synonyms": []
   }
