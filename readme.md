@@ -30,7 +30,7 @@ Now that Ava has responded she returns to an active listening stage awaiting her
 - Play Music: Play "Despacito" again...
 - Get Stock: How money did we make?.
   - Get Cryptocurrency: When moon?
-- Get Time: ~~Is it hammer time?~~
+- ~~Get Time: Is it hammer time?~~
   - Set Timer: Set boiling water timer.
 - OS Control: Log off.
 - Get Recipe: How to make cereal?
