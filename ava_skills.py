@@ -22,7 +22,8 @@ class AvaSkills():
         method = "zip"
         response = {
             "tts": "",
-            "file": ""
+            "file": "",
+            "save": True,
         }
         if(result['entities']):
             for entity in result['entities']:
@@ -113,7 +114,7 @@ class AvaSkills():
         # values based on who the original caller was.
         return self.get_weather(result, "temperature")
 
-    def get_restaurant(self):
+    def get_restaurant(self, result):
 
         # Get_restaurants makes use of Zomato API for restaurant searching. Zomato API requires multiple requests to first
         # get the location id and then from the location id to get categorie id's and from there get the restaurant id's before
@@ -133,3 +134,10 @@ class AvaSkills():
         url = f'https://developers.zomato.com/api/v2.1/{category}'
 
         r = requests.get(url=url, headers=headers)
+
+    def get_time(self, result):
+        return {
+            "tts": f"The current time is {datetime.datetime.now().strftime('%I:%M %p')}",
+            "file": "time.mp3",
+            "save": False
+        }

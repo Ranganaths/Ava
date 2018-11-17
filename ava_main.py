@@ -1,8 +1,8 @@
 from rasa_nlu.model import Interpreter
-from pyaudio import PyAudio
+from pyaudio import PyAudio, paInt16
 from pocketsphinx import pocketsphinx
-from os import path
-from pygame import mixer
+from os import path, remove, rename
+from pygame import mixer, event
 from ava_skills import AvaSkills
 import ava_api_keys as keys
 import ava_settings as settings
@@ -15,7 +15,7 @@ class Ava (AvaSkills):
 
     def __init__(self):
         self.interpreter = Interpreter.load(settings.RASA_MODEL_DIR)
-        self.stream = PyAudio().open(format=PyAudio.paInt16, channels=1,
+        self.stream = PyAudio().open(format=paInt16, channels=1,
                                      rate=16000, input=True, frames_per_buffer=1024)
         self.config = pocketsphinx.Decoder.default_config()
 
@@ -32,7 +32,6 @@ class Ava (AvaSkills):
     def listen_for_wake(self):
         self.stream.start_stream()
         self.decoder.start_utt()
-        mixer.init()
         print("Waiting for wakeup ...")
         while True:
             buf = self.stream.read(1024)
@@ -53,7 +52,7 @@ class Ava (AvaSkills):
                 print("Waiting for wakeup ...")
                 self.decoder.start_utt()
 
-    def get_tts(self, text, file_name):
+    def get_tts(self, text, file_name, save):
         print("Converting text to speech...")
         polly_client = boto3.Session(aws_access_key_id=keys.POLLY_ACCESS_KEY_ID,
                                      aws_secret_access_key=keys.POLLY_SECRET_ACCESS_KEY, region_name='us-west-2').client('polly')
@@ -64,24 +63,32 @@ class Ava (AvaSkills):
         print("Creating Audio file...")
         with open(settings.MEDIA_DIR+file_name, 'wb') as f:
             f.write(response['AudioStream'].read())
+        self.play_audio(audio_file=file_name, save=save)
 
-        self.play_audio(audio_file=file_name)
-
-    def play_audio(self, audio_file):
+    def play_audio(self, audio_file, save=True):
         audio_file = settings.MEDIA_DIR + audio_file
-        if path.isfile(audio_file):
+        is_file = path.isfile(audio_file)
+        if is_file:
+            mixer.init()
             try:
                 mixer.music.load(audio_file)
                 mixer.music.play()
+                print("Playing Audio: ", audio_file)
                 while(mixer.music.get_busy()):
                     continue
-                return True
-            except:
-                print("Error playing file...")
+                mixer.music.stop()
+            except Exception as e:
+                print("Error playing file...", e)
                 return False
+            finally:
+                mixer.quit()
+                print("Done playing...")
         else:
             print("Audio file not found...")
             return False
+        if(not save):
+            remove(audio_file)
+        return True
 
     def listen_for_input(self):
         mic = speech_recognition.Microphone()
@@ -131,7 +138,8 @@ class Ava (AvaSkills):
 
     def respond_intent_result(self, result):
         if(not self.play_audio(result['file'])):
-            self.get_tts(text=result['tts'], file_name=result['file'])
+            self.get_tts(
+                text=result['tts'], file_name=result['file'], save=result['save'])
 
 
 if __name__ == "__main__":
