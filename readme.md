@@ -18,7 +18,7 @@ With a trained model we can now pass the speech recognition text into a Rasa int
 
 Now that Ava has responded she returns to an active listening stage awaiting her wake up command, "hey ava" and we can begin the process all over again!
 
-## Available and Planned Skill
+## Available and Planned Skills
 
 - Get Status: Ava how are you doing?
 - ~~Get Weather: Is it sunny?~~
@@ -30,7 +30,7 @@ Now that Ava has responded she returns to an active listening stage awaiting her
 - Play Music: Play "Despacito" again...
 - Get Stock: How money did we make?.
   - Get Cryptocurrency: When moon?
-- Get Time: ~~Is it hammer time?~~
+- ~~Get Time: Is it hammer time?~~
   - Set Timer: Set boiling water timer.
 - OS Control: Log off.
 - Get Recipe: How to make cereal?
