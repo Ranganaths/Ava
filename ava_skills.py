@@ -112,3 +112,24 @@ class AvaSkills():
         # we can can call get_weather with an extra parameter that will allow get_weather to return the appropriate
         # values based on who the original caller was.
         return self.get_weather(result, "temperature")
+
+    def get_restaurant(self):
+
+        # Get_restaurants makes use of Zomato API for restaurant searching. Zomato API requires multiple requests to first
+        # get the location id and then from the location id to get categorie id's and from there get the restaurant id's before
+        # finally being able to get the restaurant details. That's a lot. A lot of the data for categories and city id can just be
+        # stored. Additional restaurant data can then be used via requests. Get_restaurants will make use of TinyDB for a simple
+        # document based database. The database will be used if its present or created if it hasn't been already. The initial requests
+        # will use the settings location information to retrive and store the data related to the user city.
+
+        headers = {
+            "Accept": "application/json",
+            "user-key": keys.ZOMATO_KEY,
+            "entity-id": "",
+            "res_id": "",
+        }
+        category = ""
+
+        url = f'https://developers.zomato.com/api/v2.1/{category}'
+
+        r = requests.get(url=url, headers=headers)

@@ -1,22 +1,21 @@
 from rasa_nlu.model import Interpreter
 from pyaudio import PyAudio
 from pocketsphinx import pocketsphinx
-import ava_settings as settings
 from os import path
 from pygame import mixer
+from ava_skills import AvaSkills
 import ava_api_keys as keys
-import pyaudio as pAudio
+import ava_settings as settings
 import json
 import speech_recognition
 import boto3
-from ava_skills import AvaSkills
 
 
 class Ava (AvaSkills):
 
     def __init__(self):
         self.interpreter = Interpreter.load(settings.RASA_MODEL_DIR)
-        self.stream = PyAudio().open(format=pAudio.paInt16, channels=1,
+        self.stream = PyAudio().open(format=PyAudio.paInt16, channels=1,
                                      rate=16000, input=True, frames_per_buffer=1024)
         self.config = pocketsphinx.Decoder.default_config()
 

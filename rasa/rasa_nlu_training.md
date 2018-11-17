@@ -215,7 +215,11 @@
 - what's the time?
 
 <!-- ## intent:light_control
-
+## get_antonyms
+## get_synonym
+## get_cryptocurrency
+## set_timer
+##
 ## intent:os_control
 
 ## intent:google_search
@@ -224,10 +228,7 @@
 - What's two times two
 - What is 2 times 2
 - what is 12 time
-
-
-
-
+## intent:get_event"
 
 ## intent:geo_location
 
