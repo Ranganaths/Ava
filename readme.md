@@ -47,15 +47,20 @@ Now that Ava has responded she returns to an active listening stage awaiting her
 
 # Built With
 
+### API's
+
+- [Amazon Polly](https://aws.amazon.com/polly/)
+- [Zomato API](https://developers.zomato.com/documentation#/)
+- [Open Weather Map API](https://openweathermap.org/api)
+
+### Python Libraries
+
 - [Speech_Recognition](https://github.com/Uberi/speech_recognition)
 - [Pocketsphinx-Python](https://github.com/cmusphinx/pocketsphinx-python)
 - [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/)
-- [Rasa NLU](https://rasa.com/docs/nlu/)
-- [Rasa Core](https://rasa.com/docs/core/)
+- [Rasa NLU](https://github.com/RasaHQ/rasa_nlu)
+- [Rasa Core](https://github.com/RasaHQ/rasa_core)
 - [Requests](http://docs.python-requests.org/en/master/)
-- [Amazon Polly](https://aws.amazon.com/polly/)
-  - [Boto 3 - The AWS SDK for Python](https://github.com/boto/boto3)
-- [Zomato API](https://developers.zomato.com/documentation#/)
-- [Open Weather Map API](https://openweathermap.org/api)
+- [Boto 3 - The AWS SDK for Python](https://github.com/boto/boto3)
 - [PyGame](https://www.pygame.org/news)
 - [Dateparser](https://github.com/scrapinghub/dateparser/blob/master/docs/index.rst)
