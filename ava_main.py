@@ -9,6 +9,7 @@ import ava_settings as settings
 import json
 import speech_recognition
 import boto3
+import time
 
 
 class Ava (AvaSkills):
@@ -40,6 +41,8 @@ class Ava (AvaSkills):
             else:
                 break
             if self.decoder.hyp() is not None:
+                global t0
+                t0 = time.time()
                 print(f"Key phrase '{settings.WAKE_PHRASE}' detected...")
                 if (not self.play_audio("wake_chime.mp3")):
                     exit()
@@ -52,7 +55,7 @@ class Ava (AvaSkills):
                 print("Waiting for wakeup ...")
                 self.decoder.start_utt()
 
-    def get_tts(self, text, file_name, save):
+    def get_tts(self, text, file_name, save=True):
         print("Converting text to speech...")
         polly_client = boto3.Session(aws_access_key_id=keys.POLLY_ACCESS_KEY_ID,
                                      aws_secret_access_key=keys.POLLY_SECRET_ACCESS_KEY, region_name='us-west-2').client('polly')
@@ -81,22 +84,27 @@ class Ava (AvaSkills):
                 print("Error playing file...", e)
                 return False
             finally:
+                if(not save):
+                    # A weird bug exists where we can't delete a file via remove or File Explorer even after quiting the mixer. The issue appears to only occur with mp3's that were created from this script.
+                    # To circumvent temporarily we do a quick load of a dummy file so taht we can delete our intended file. This doesn't effect the normal flow of the function.
+                    mixer.music.load(settings.MEDIA_DIR + "dummy.wav")
+                    remove(audio_file)
                 mixer.quit()
                 print("Done playing...")
         else:
             print("Audio file not found...")
             return False
-        if(not save):
-            remove(audio_file)
         return True
 
     def listen_for_input(self):
-        mic = speech_recognition.Microphone()
         sr = speech_recognition.Recognizer()
+        mic = speech_recognition.Microphone()
         hyp = None
         with mic as source:
-            sr.adjust_for_ambient_noise(source)
+            # sr.adjust_for_ambient_noise(source)
             try:
+                global t0
+                print(time.time() - t0)
                 print("Listening...")
                 audio = sr.listen(source, timeout=2)
                 print("Decoding...")
