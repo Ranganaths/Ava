@@ -148,7 +148,3 @@ class Ava (AvaSkills):
         if(not self.play_audio(result['file'])):
             self.get_tts(
                 text=result['tts'], file_name=result['file'], save=result['save'])
-
-
-if __name__ == "__main__":
-    Ava()

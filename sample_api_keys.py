@@ -7,3 +7,7 @@ OWM_DEFAULT_KEY = ""
 
 # Zomato API Key for restaurant dat
 ZOMATO_KEY = ""
+
+# Spotify Client Keys
+SPOTIFY_CLIENT_ID = ""
+SPOTIFY_CLIENT_SECRET = ""
