@@ -37,3 +37,4 @@ tensorflow==1.10.0
 textblob==0.15.1
 tqdm==4.23.3
 typing==3.6.4
+webrtcvad==2.0.10

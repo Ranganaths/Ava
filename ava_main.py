@@ -1,8 +1,9 @@
 from rasa_nlu.model import Interpreter
 from pyaudio import PyAudio, paInt16
+from pydub import AudioSegment
+from pydub.playback import play
 from pocketsphinx import pocketsphinx
 from os import path, remove, rename
-from pygame import mixer, event
 from ava_skills import AvaSkills
 import ava_api_keys as keys
 import ava_settings as settings
@@ -11,15 +12,12 @@ import speech_recognition
 import boto3
 import time
 
-
 class Ava (AvaSkills):
-
     def __init__(self):
         self.interpreter = Interpreter.load(settings.RASA_MODEL_DIR)
         self.stream = PyAudio().open(format=paInt16, channels=1,
-                                     rate=16000, input=True, frames_per_buffer=1024)
+                                     rate=44100, input=True, frames_per_buffer=1024)
         self.config = pocketsphinx.Decoder.default_config()
-
         self.config.set_string(
             '-hmm', path.join(settings.SPHINX_MODEL_DIR, 'en-us/en-us'))
         self.config.set_string('-dict', path.join(settings.SPHINX_MODEL_DIR,
@@ -44,10 +42,10 @@ class Ava (AvaSkills):
                 global t0
                 t0 = time.time()
                 print(f"Key phrase '{settings.WAKE_PHRASE}' detected...")
-                if (not self.play_audio("wake_chime.mp3")):
+                if (not self.play_mp3("wake_chime.mp3")):
                     exit()
 
-                if (not self.play_audio("wake_greeting.mp3")):
+                if (not self.play_mp3("wake_greeting.mp3")):
                     self.get_tts(text="How can I help?",
                                  file_name="wake_greeting.mp3")
                 self.listen_for_input()
@@ -60,37 +58,30 @@ class Ava (AvaSkills):
         polly_client = boto3.Session(aws_access_key_id=keys.POLLY_ACCESS_KEY_ID,
                                      aws_secret_access_key=keys.POLLY_SECRET_ACCESS_KEY, region_name='us-west-2').client('polly')
 
-        response = polly_client.synthesize_speech(VoiceId='Joanna',
-                                                  OutputFormat='mp3',
-                                                  Text=text)
-        print("Creating Audio file...")
-        with open(settings.MEDIA_DIR+file_name, 'wb') as f:
-            f.write(response['AudioStream'].read())
-        self.play_audio(audio_file=file_name, save=save)
+        response = polly_client.synthesize_speech(VoiceId='Joanna',OutputFormat='mp3', SampleRate="16000",Text=text)
+        data = response['AudioStream'].read()
+        self.play_byte(data)
+        if save:
+            AudioSegment(data=data,sample_width=2,frame_rate=16000,channels=1).export(out_f=file_name,format="mp3")
 
-    def play_audio(self, audio_file, save=True):
-        audio_file = settings.MEDIA_DIR + audio_file
-        is_file = path.isfile(audio_file)
+    def play_byte(self,stream):
+        try:
+            print("Playing byte stream...")
+            play(AudioSegment(data=stream,sample_width=2,frame_rate=16000,channels=1))
+        except Exception as e:
+            print("Error playing file...",e)
+
+        
+    def play_mp3(self, audio_file, save=True):
+        file_path = settings.MEDIA_DIR + audio_file
+        is_file = path.isfile(file_path)
         if is_file:
-            mixer.init()
             try:
-                mixer.music.load(audio_file)
-                mixer.music.play()
-                print("Playing Audio: ", audio_file)
-                while(mixer.music.get_busy()):
-                    continue
-                mixer.music.stop()
+                print("Playing audio...")
+                play(AudioSegment.from_mp3(file_path))
             except Exception as e:
                 print("Error playing file...", e)
                 return False
-            finally:
-                if(not save):
-                    # A weird bug exists where we can't delete a file via remove or File Explorer even after quiting the mixer. The issue appears to only occur with mp3's that were created from this script.
-                    # To circumvent temporarily we do a quick load of a dummy file so taht we can delete our intended file. This doesn't effect the normal flow of the function.
-                    mixer.music.load(settings.MEDIA_DIR + "dummy.wav")
-                    remove(audio_file)
-                mixer.quit()
-                print("Done playing...")
         else:
             print("Audio file not found...")
             return False
@@ -112,9 +103,8 @@ class Ava (AvaSkills):
             except speech_recognition.WaitTimeoutError as e:
                 print("No input detected timeout...")
             except speech_recognition.UnknownValueError as e:
-                if (not self.play_audio("decode_error.mp3")):
-                    self.get_tts(
-                        text="I'm sorry, but I was not able to understand that command.", file_name="decode_error.mp3")
+                if (not self.play_mp3("decode_error.mp3")):
+                    self.get_tts(text="I'm sorry, but I was not able to understand that command.", file_name="decode_error.mp3")
             except speech_recognition.RequestError as e:
                 print("Google request error: ", e)
                 print("Running backup decode Sphinx...")
@@ -122,9 +112,8 @@ class Ava (AvaSkills):
                     hyp = sr.recognize_google(audio)
                 except speech_recognition.UnknownValueError as e:
                     print("Sphinx recognition error: ", e)
-                    if (not self.play_audio("decode_error.mp3")):
-                        self.get_tts(text="I'm sorry, but I was not able to understand that command.",
-                                     file_name="decode_error.mp3")
+                    if (not self.play_mp3("decode_error.mp3")):
+                        self.get_tts(text="I'm sorry, but I was not able to understand that command.", file_name="decode_error.mp3")
             else:
                 self.process_input_intent(hyp)
 
@@ -145,6 +134,5 @@ class Ava (AvaSkills):
             print(f"Failed intent action...\n\tERROR: {e} ")
 
     def respond_intent_result(self, result):
-        if(not self.play_audio(result['file'])):
-            self.get_tts(
-                text=result['tts'], file_name=result['file'], save=result['save'])
+        if(not self.play_mp3(result['file'])):
+            self.get_tts(text=result['tts'], file_name=result['file'], save=result['save'])
