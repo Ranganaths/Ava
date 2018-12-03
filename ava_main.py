@@ -97,7 +97,7 @@ class Ava (AvaSkills):
         mic = speech_recognition.Microphone()
         hyp = None
         with mic as source:
-            # sr.adjust_for_ambient_noise(source)
+            sr.adjust_for_ambient_noise(source)
             try:
                 print("Listening...")
                 audio = sr.listen(source, timeout=2)
@@ -139,6 +139,7 @@ class Ava (AvaSkills):
             print(f"Failed intent action...\n\tERROR: {e} ")
 
     def respond_intent_result(self, result):
+        print(f"RESPONSE: {result['tts']}")
         if(not self.play_mp3(result['file'])):
             self.get_tts(
                 text=result['tts'], file_name=result['file'], save=result['save'])
