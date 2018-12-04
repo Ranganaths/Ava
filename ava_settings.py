@@ -7,3 +7,6 @@ HOME_CITY = "seattle"
 HOME_STATE = "WA"
 HOME_ZIPCODE = "98109"
 HOME_COUNTRY_CODE = "us"
+MINIMUM_RESTAURANT_RATING = 3.0  # Type float
+PROGRAMS_DIR1 = "C:/ProgramData/Microsoft/Windows/Start Menu/Programs"
+PROGRAMS_DIR2 = "C:/Users/Jordy/AppData/Roaming/Microsoft/Windows/Start Menu/Programs"

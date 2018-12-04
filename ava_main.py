@@ -11,9 +11,10 @@ import speech_recognition
 import boto3
 
 
-
 class Ava (AvaSkills):
+
     def __init__(self):
+        super().__init__(self)
         self.interpreter = Interpreter.load(settings.RASA_MODEL_DIR)
         self.stream = PyAudio().open(format=paInt16, channels=1,
                                      rate=16000, input=True, frames_per_buffer=1024, output_device_index=0)

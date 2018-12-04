@@ -403,7 +403,7 @@
       },
       {
         "intent": "get_restaurant",
-        "text": "i'm looking for a place to eat"
+        "text": "I'm looking for a place to eat"
       },
       {
         "intent": "get_restaurant",
@@ -425,13 +425,37 @@
         "intent": "get_restaurant",
         "entities": [
           {
+            "start": 27,
+            "end": 32,
+            "value": "Asian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I could really go for some Asian food"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "where should we eat"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "I'm starving"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "I'm starving what should i eat"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
             "start": 31,
             "end": 36,
             "value": "north",
             "entity": "location"
           }
         ],
-        "text": "i'm looking for a place in the north of town"
+        "text": "I'm looking for a place in the north of town to eat"
       },
       {
         "intent": "get_restaurant",
@@ -439,11 +463,11 @@
           {
             "start": 8,
             "end": 15,
-            "value": "chinese",
+            "value": "Chinese",
             "entity": "cuisine"
           }
         ],
-        "text": "show me chinese restaurants"
+        "text": "Show me Chinese restaurants"
       },
       {
         "intent": "get_restaurant",
@@ -451,7 +475,7 @@
           {
             "start": 10,
             "end": 17,
-            "value": "mexican",
+            "value": "Mexican",
             "entity": "cuisine"
           },
           {
@@ -461,7 +485,7 @@
             "entity": "location"
           }
         ],
-        "text": "show me a mexican place in the centre"
+        "text": "Show me a Mexican place in the centre"
       },
       {
         "intent": "get_restaurant",
@@ -469,39 +493,15 @@
           {
             "start": 20,
             "end": 26,
-            "value": "indian",
+            "value": "Indian",
             "entity": "cuisine"
           }
         ],
-        "text": "i am looking for an indian spot"
+        "text": "I am looking for an Indian spot"
       },
       {
         "intent": "get_restaurant",
-        "text": "search for restaurants"
-      },
-      {
-        "intent": "get_restaurant",
-        "entities": [
-          {
-            "start": 16,
-            "end": 20,
-            "value": "west",
-            "entity": "location"
-          }
-        ],
-        "text": "anywhere in the west"
-      },
-      {
-        "intent": "get_restaurant",
-        "entities": [
-          {
-            "start": 14,
-            "end": 19,
-            "value": "18328",
-            "entity": "location"
-          }
-        ],
-        "text": "anywhere near 18328"
+        "text": "Search for Restaurants"
       },
       {
         "intent": "get_restaurant",
@@ -549,6 +549,12 @@
         "intent": "get_restaurant",
         "entities": [
           {
+            "start": 11,
+            "end": 18,
+            "value": "closest",
+            "entity": "location"
+          },
+          {
             "start": 19,
             "end": 28,
             "value": "fast food",
@@ -559,15 +565,27 @@
       },
       {
         "intent": "get_restaurant",
-        "text": "What should eat"
+        "text": "What should I eat?"
       },
       {
         "intent": "get_restaurant",
-        "text": "any good food around here"
+        "text": "Any good food around here"
       },
       {
         "intent": "get_restaurant",
-        "text": "whats the best place to eat"
+        "text": "Whats the best place to eat"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "Chinese",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I'd like some Chinese food"
       },
       {
         "intent": "get_restaurant",
@@ -585,7 +603,7 @@
             "entity": "location"
           }
         ],
-        "text": "whats the best thai food in ballard"
+        "text": "Whats the best thai food in ballard"
       },
       {
         "intent": "get_restaurant",
@@ -597,7 +615,7 @@
             "entity": "time"
           }
         ],
-        "text": "what restaurants are open now"
+        "text": "What restaurants are open now"
       },
       {
         "intent": "get_restaurant",
@@ -615,7 +633,7 @@
             "entity": "time"
           }
         ],
-        "text": "what thai restaurants are open right now"
+        "text": "What thai restaurants are open right now"
       },
       {
         "intent": "get_restaurant",
@@ -633,7 +651,7 @@
             "entity": "location"
           }
         ],
-        "text": "is there any good indian around here"
+        "text": "Is there any good indian around here"
       },
       {
         "intent": "get_weather",
@@ -1120,48 +1138,6 @@
         "text": "Whats the current temperature in 98109"
       },
       {
-        "intent": "convert_unit",
-        "entities": [
-          {
-            "start": 9,
-            "end": 15,
-            "value": "ounces",
-            "entity": "unit"
-          },
-          {
-            "start": 21,
-            "end": 26,
-            "value": "pound",
-            "entity": "unit"
-          }
-        ],
-        "text": "How many ounces in a pound"
-      },
-      {
-        "intent": "convert_unit",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "Five",
-            "entity": "ammount"
-          },
-          {
-            "start": 5,
-            "end": 9,
-            "value": "cups",
-            "entity": "unit"
-          },
-          {
-            "start": 22,
-            "end": 28,
-            "value": "liters",
-            "entity": "unit"
-          }
-        ],
-        "text": "Five cups is how many liters"
-      },
-      {
         "intent": "get_status",
         "text": "How are you?"
       },
@@ -1188,66 +1164,6 @@
       {
         "intent": "get_status",
         "text": "You doing alright?"
-      },
-      {
-        "intent": "get_defenition",
-        "entities": [
-          {
-            "start": 23,
-            "end": 29,
-            "value": "carrot",
-            "entity": "key"
-          }
-        ],
-        "text": "Definition of the word carrot"
-      },
-      {
-        "intent": "get_defenition",
-        "entities": [
-          {
-            "start": 7,
-            "end": 12,
-            "value": "trust",
-            "entity": "key"
-          }
-        ],
-        "text": "Define trust"
-      },
-      {
-        "intent": "get_defenition",
-        "entities": [
-          {
-            "start": 16,
-            "end": 20,
-            "value": "sand",
-            "entity": "key"
-          }
-        ],
-        "text": "Define the word sand"
-      },
-      {
-        "intent": "get_defenition",
-        "entities": [
-          {
-            "start": 31,
-            "end": 36,
-            "value": "smart",
-            "entity": "key"
-          }
-        ],
-        "text": "What's the meaning of the word smart"
-      },
-      {
-        "intent": "get_defenition",
-        "entities": [
-          {
-            "start": 23,
-            "end": 30,
-            "value": "machine",
-            "entity": "key"
-          }
-        ],
-        "text": "What is the meaning of machine"
       },
       {
         "intent": "get_music",
@@ -1486,46 +1402,6 @@
         "text": "play previous song"
       },
       {
-        "intent": "finance_search",
-        "entities": [
-          {
-            "start": 28,
-            "end": 32,
-            "value": "AAPL",
-            "entity": "ticker"
-          }
-        ],
-        "text": "what's the current price of AAPL"
-      },
-      {
-        "intent": "finance_search",
-        "entities": [
-          {
-            "start": 6,
-            "end": 8,
-            "value": "GE",
-            "entity": "ticker"
-          }
-        ],
-        "text": "how's GE performing"
-      },
-      {
-        "intent": "finance_search",
-        "text": "how's the market doing?"
-      },
-      {
-        "intent": "finance_search",
-        "entities": [
-          {
-            "start": 3,
-            "end": 10,
-            "value": "bitcoin",
-            "entity": "ticker"
-          }
-        ],
-        "text": "is bitcoin up or down?"
-      },
-      {
         "intent": "get_time",
         "text": "What time is it?"
       },
@@ -1548,6 +1424,306 @@
       {
         "intent": "get_time",
         "text": "what's the time?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "Publisher",
+            "entity": "program"
+          }
+        ],
+        "text": "open Publisher"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "chrome",
+            "entity": "program"
+          }
+        ],
+        "text": "launch chrome"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 15,
+            "end": 29,
+            "value": "Github Desktop",
+            "entity": "program"
+          }
+        ],
+        "text": "launch program Github Desktop"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 13,
+            "end": 25,
+            "value": "OneNote 2016",
+            "entity": "program"
+          }
+        ],
+        "text": "will you run OneNote 2016"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "Side Sync",
+            "entity": "program"
+          }
+        ],
+        "text": "launch Side Sync"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Firefox",
+            "entity": "program"
+          }
+        ],
+        "text": "open Firefox"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "OneNote",
+            "entity": "program"
+          }
+        ],
+        "text": "run OneNote"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "settings",
+            "entity": "program"
+          }
+        ],
+        "text": "open settings"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 22,
+            "value": "Adobe Illustrator",
+            "entity": "program"
+          }
+        ],
+        "text": "open Adobe Illustrator"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "PowerPoint",
+            "entity": "program"
+          }
+        ],
+        "text": "open PowerPoint"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "spotify",
+            "entity": "program"
+          }
+        ],
+        "text": "open spotify"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 16,
+            "value": "NetBeans IDE",
+            "entity": "program"
+          }
+        ],
+        "text": "run NetBeans IDE"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 23,
+            "value": "Visual Studio Code",
+            "entity": "program"
+          }
+        ],
+        "text": "open Visual Studio Code"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "Audacity",
+            "entity": "program"
+          }
+        ],
+        "text": "launch Audacity"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 21,
+            "value": "VLC media player",
+            "entity": "program"
+          }
+        ],
+        "text": "open VLC media player"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "Audacity",
+            "entity": "program"
+          }
+        ],
+        "text": "run Audacity"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 15,
+            "value": "Blue Stacks",
+            "entity": "program"
+          }
+        ],
+        "text": "run Blue Stacks"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "Word",
+            "entity": "program"
+          }
+        ],
+        "text": "run Word"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "Publisher",
+            "entity": "program"
+          }
+        ],
+        "text": "open Publisher"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 17,
+            "value": "Google Chrome",
+            "entity": "program"
+          }
+        ],
+        "text": "run Google Chrome"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 14,
+            "end": 32,
+            "value": "Visual Studio Code",
+            "entity": "program"
+          }
+        ],
+        "text": "will you open Visual Studio Code"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "Excel",
+            "entity": "program"
+          }
+        ],
+        "text": "can you launch Excel"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "SideSync",
+            "entity": "program"
+          }
+        ],
+        "text": "launch SideSync"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "OneDrive",
+            "entity": "program"
+          }
+        ],
+        "text": "launch OneDrive"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "Outlook",
+            "entity": "program"
+          }
+        ],
+        "text": "can you open Outlook"
       }
     ],
     "regex_features": [],

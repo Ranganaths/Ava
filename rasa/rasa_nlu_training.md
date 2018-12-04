@@ -84,27 +84,32 @@
 
 ## intent:get_restaurant
 
-- i'm looking for a place to eat
+- I'm looking for a place to eat
 - I want to grab lunch
 - I am searching for a dinner spot
 - I'm hungry
 - I am hungry
-- i'm looking for a place in the [north](location) of town
-- show me [chinese](cuisine) restaurants
-- show me a [mexican](cuisine) place in the [centre](location)
-- i am looking for an [indian](cuisine) spot
-- search for restaurants
+- I could really go for some [Asian](cuisine) food
+- where should we eat
+- I'm starving
+- I'm starving what should i eat
+- I'm looking for a place in the [north](location) of town to eat
+- Show me [Chinese](cuisine) restaurants
+- Show me a [Mexican](cuisine) place in the [centre](location)
+- I am looking for an [Indian](cuisine) spot
+- Search for Restaurants
 - I am looking for [asian fusion](cuisine) food
 - I am looking a restaurant in [29432](location)
 - Is there good [bbq](cuisine) around [here](location)
-- What's the closest [fast food](cuisine)
-- What should eat
-- any good food around here
-- whats the best place to eat
-- whats the best [thai](cuisine) food in [ballard](location)
-- what restaurants are open [now](time)
-- what [thai](cuisine) restaurants are open [right now](time)
-- is there any good [indian](cuisine) around [here](location)
+- What's the [closest](location) [fast food](cuisine)
+- What should I eat?
+- Any good food around here
+- Whats the best place to eat
+- I'd like some [Chinese](cuisine) food
+- Whats the best [thai](cuisine) food in [ballard](location)
+- What restaurants are open [now](time)
+- What [thai](cuisine) restaurants are open [right now](time)
+- Is there any good [indian](cuisine) around [here](location)
 
 ## intent:get_weather
 
@@ -152,11 +157,6 @@
 - How hot is [San Francisco](location)
 - Whats the current temperature in [98109](location)
 
-## intent:convert_unit
-
-- How many [ounces](unit) in a [pound](unit)
-- [Five](ammount) [cups](unit) is how many [liters](unit)
-
 ## intent:get_status
 
 - How are you?
@@ -166,14 +166,6 @@
 - What's up?
 - You doing ok?
 - You doing alright?
-
-## intent:get_defenition
-
-- Definition of the word [carrot](key)
-- Define [trust](key)
-- Define the word [sand](key)
-- What's the meaning of the word [smart](key)
-- What is the meaning of [machine](key)
 
 ## intent:get_music
 
@@ -196,13 +188,6 @@
 - [previous](action) song
 - [play](action) [previous](action) song
 
-## intent:finance_search
-
-- what's the current price of [AAPL](ticker)
-- how's [GE](ticker) performing
-- how's the market doing?
-- is [bitcoin](ticker) up or down?
-
 ## intent:get_time
 
 - What time is it?
@@ -211,6 +196,34 @@
 - What is the time?
 - What's the current time?
 - what's the time?
+
+## intent:run_program
+
+- open [Publisher](program)
+- launch [chrome](program)
+- launch program [Github Desktop](program)
+- will you run [OneNote 2016](program)
+- launch [Side Sync](program)
+- open [Firefox](program)
+- run [OneNote](program)
+- open [settings](program)
+- open [Adobe Illustrator](program)
+- open [PowerPoint](program)
+- open [spotify](program)
+- run [NetBeans IDE](program)
+- open [Visual Studio Code](program)
+- launch [Audacity](program)
+- open [VLC media player](program)
+- run [Audacity](program)
+- run [BlueStacks](program)
+- run [Word](program)
+- open [Publisher](program)
+- run [Google Chrome](program)
+- will you open [Visual Studio Code](program)
+- can you launch [Excel](program)
+- launch [SideSync](program)
+- launch [OneDrive](program)
+- can you open [Outlook](program)
 
 <!-- ## intent:light_control
 ## get_antonyms
@@ -229,6 +242,11 @@
 ## intent:get_event"
 
 ## intent:geo_location
+
+## intent:convert_unit
+
+- How many [ounces](unit) in a [pound](unit)
+- [Five](ammount) [cups](unit) is how many [liters](unit)
 
 ## intent:get_recipes
 
@@ -249,4 +267,19 @@
 ## intent:get_news
 
 ## intent:manage_project
+
+## intent:finance_search
+
+- what's the current price of [AAPL](ticker)
+- how's [GE](ticker) performing
+- how's the market doing?
+- is [bitcoin](ticker) up or down?
+
+## intent:get_defenition
+
+- Definition of the word [carrot](key)
+- Define [trust](key)
+- Define the word [sand](key)
+- What's the meaning of the word [smart](key)
+- What is the meaning of [machine](key)
 -->

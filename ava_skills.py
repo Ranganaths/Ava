@@ -1,13 +1,16 @@
 from skills import *
 # The skill have been modularized for ease of reading. Each skill returns the result from a corresponding skills module in the skills package.
 
+
 class AvaSkills():
-    def __init__(self,city_id):
-        #Get intial data necessary for some requests and keeping it in memory rather than repeating API calls.
+    def __init__(self, city_id):
+        # Get intial data necessary for some requests and keeping it in memory rather than repeating API calls.
 
         self._zomato_city_id = restaurant.get_city_id()
-        self._zomato_cuisines = restaurant.get_categories(self._zomato_city_id,"cuisines")
-        self._zomato_establishments = restaurant.get_categories(self._zomato_city_id,"establishments")
+        self._zomato_cuisines = restaurant.get_categories(
+            self._zomato_city_id, "cuisines")
+        self._zomato_establishments = restaurant.get_categories(
+            self._zomato_city_id, "establishments")
 
     def get_weather(self, result, source="weather"):
         # Returns the results of the weather module in the skills package.
@@ -20,7 +23,10 @@ class AvaSkills():
         return self.get_weather(result=result, source="temperature")
 
     def get_restaurant(self, result):
-        return restaurant.get_restaurant(result,self._zomato_city_id,self._zomato_cuisines,self._zomato_establishments)
+        return restaurant.get_restaurant(result, self._zomato_city_id, self._zomato_cuisines, self._zomato_establishments)
 
     def get_time(self, result):
         return clock.get_time(result)
+
+    def run_program(self, result):
+        return programs.run_program(result)
