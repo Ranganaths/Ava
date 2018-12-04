@@ -3,14 +3,13 @@ from pyaudio import PyAudio, paInt16
 from pydub import AudioSegment
 from pydub.playback import play
 from pocketsphinx import pocketsphinx
-from os import path, remove, rename
+from os import path
 from ava_skills import AvaSkills
 import ava_api_keys as keys
 import ava_settings as settings
-import json
 import speech_recognition
 import boto3
-import time
+
 
 
 class Ava (AvaSkills):

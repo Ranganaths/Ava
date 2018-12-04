@@ -94,8 +94,6 @@
 - show me a [mexican](cuisine) place in the [centre](location)
 - i am looking for an [indian](cuisine) spot
 - search for restaurants
-- anywhere in the [west](location)
-- anywhere near [18328](location)
 - I am looking for [asian fusion](cuisine) food
 - I am looking a restaurant in [29432](location)
 - Is there good [bbq](cuisine) around [here](location)
