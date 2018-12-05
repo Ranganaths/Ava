@@ -30,3 +30,9 @@ class AvaSkills():
 
     def run_program(self, result):
         return programs.run_program(result)
+
+    def get_dictionary(self, result):
+        return dictionary.get_dictionary(result)
+
+    def get_thesaurus(self, result):
+        return dictionary.get_thesaurus(result)

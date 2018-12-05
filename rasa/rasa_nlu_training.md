@@ -225,9 +225,29 @@
 - launch [OneDrive](program)
 - can you open [Outlook](program)
 
+## intent:get_dictionary
+
+- Definition of the word [carrot](key)
+- Define [trust](key)
+- Define the word [sand](key)
+- What's the meaning of the word [smart](key)
+- What is the meaning of [machine](key)
+
+## intent:get_thesaurus
+
+- What's the [antonym](type) of [down](key)
+- What's the [opposite](type) of [happy](key)
+- [Antonym](type) of [orange](key)
+- [Antonym](type) of the word [expert](key)
+- What is the [antonym](type) of the word [expansion](key)
+- What's the [synonym](type) of [down](key)
+- What's the [opposite](type) of [understanding](key)
+- [Synonym](type) of [Strategies](key)
+- [Synonym](type) of the word [confidence](key)
+- What is the Synonym of the word [explosive](key)
+
 <!-- ## intent:light_control
-## get_antonyms
-## get_synonym
+
 ## get_cryptocurrency
 ## set_timer
 ##
@@ -275,11 +295,5 @@
 - how's the market doing?
 - is [bitcoin](ticker) up or down?
 
-## intent:get_defenition
 
-- Definition of the word [carrot](key)
-- Define [trust](key)
-- Define the word [sand](key)
-- What's the meaning of the word [smart](key)
-- What is the meaning of [machine](key)
 -->

@@ -1622,12 +1622,12 @@
         "entities": [
           {
             "start": 4,
-            "end": 15,
-            "value": "Blue Stacks",
+            "end": 14,
+            "value": "BlueStacks",
             "entity": "program"
           }
         ],
-        "text": "run Blue Stacks"
+        "text": "run BlueStacks"
       },
       {
         "intent": "run_program",
@@ -1724,6 +1724,240 @@
           }
         ],
         "text": "can you open Outlook"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "carrot",
+            "entity": "key"
+          }
+        ],
+        "text": "Definition of the word carrot"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "trust",
+            "entity": "key"
+          }
+        ],
+        "text": "Define trust"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "sand",
+            "entity": "key"
+          }
+        ],
+        "text": "Define the word sand"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "smart",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the meaning of the word smart"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "machine",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of machine"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "antonym",
+            "entity": "type"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "down",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the antonym of down"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "happy",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the opposite of happy"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "orange",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym of orange"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "value": "expert",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym of the word expert"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "antonym",
+            "entity": "type"
+          },
+          {
+            "start": 32,
+            "end": 41,
+            "value": "expansion",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the antonym of the word expansion"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "synonym",
+            "entity": "type"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "down",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the synonym of down"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 23,
+            "end": 36,
+            "value": "understanding",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the opposite of understanding"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Synonym",
+            "entity": "type"
+          },
+          {
+            "start": 11,
+            "end": 21,
+            "value": "Strategies",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonym of Strategies"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Synonym",
+            "entity": "type"
+          },
+          {
+            "start": 20,
+            "end": 30,
+            "value": "confidence",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonym of the word confidence"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 32,
+            "end": 41,
+            "value": "explosive",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the Synonym of the word explosive"
       }
     ],
     "regex_features": [],
