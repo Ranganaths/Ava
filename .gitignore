@@ -3,4 +3,5 @@
 /__pycache__
 ava_api_keys.py
 text.log
-/media
+*.mp3
+ava_splash*.png
