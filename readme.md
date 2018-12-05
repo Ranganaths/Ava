@@ -28,11 +28,12 @@ Now that Ava has responded she returns to an active listening stage awaiting her
   - ~~Get Synonyms: Another word for awesome.~~
   - ~~Get Antonym: Opposite of misnomer.~~
 - Play Music: Play "Despacito" again...
-- Get Stock: How money did we make?.
+- Get Stock: How much money did we make?.
   - Get Cryptocurrency: When moon?
 - ~~Get Time: Is it hammer time?~~
   - Set Timer: Set boiling water timer.
 - OS Control: Log off.
+  - ~~Open Program: Double clicking is too hard.~~
 - Get Recipe: How to make cereal?
 - Movie Facts: Could Jack fit on the plank with Rose?
 - Manage Calendar: Make free time?
@@ -42,25 +43,25 @@ Now that Ava has responded she returns to an active listening stage awaiting her
   - Get Free Time: When am i free?
   - Get Appointments: What's on the agenda?
 - Get News: What did Trump do today?
-- Get Restaurants: Got any food? Cause we hungry.
+- ~~Get Restaurants: Got any food? Cause we hungry.~~
 - Get Event: Any good concerts?
 
 # Built With
 
 ### API's
 
-- [Amazon Polly](https://aws.amazon.com/polly/)
-- [Zomato API](https://developers.zomato.com/documentation#/)
-- [Open Weather Map API](https://openweathermap.org/api)
+- [Amazon Polly](https://aws.amazon.com/polly/) for Text to Speech
+- [Zomato API](https://developers.zomato.com/documentation#/) for restaurant data
+- [Open Weather Map API](https://openweathermap.org/api) for weather data
 
-### Python Libraries
+### Python Libraries (Non-Standard)
 
-- [Speech_Recognition](https://github.com/Uberi/speech_recognition)
-- [Pocketsphinx-Python](https://github.com/cmusphinx/pocketsphinx-python)
-- [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/)
-- [Rasa NLU](https://github.com/RasaHQ/rasa_nlu)
-- [Rasa Core](https://github.com/RasaHQ/rasa_core)
-- [Requests](http://docs.python-requests.org/en/master/)
-- [Boto 3 - The AWS SDK for Python](https://github.com/boto/boto3)
-- [PyGame](https://www.pygame.org/news)
-- [Dateparser](https://github.com/scrapinghub/dateparser/blob/master/docs/index.rst)
+- [Speech_Recognition](https://github.com/Uberi/speech_recognition) for Speech to Text.
+- [Pocketsphinx-Python](https://github.com/cmusphinx/pocketsphinx-python) for Speech to Text and Key Word Recognition.
+- [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/) for microphone stream bytes.
+- [PyDub](https://github.com/jiaaro/pydub) for audio playback from file or byte stream.
+- [Rasa NLU](https://github.com/RasaHQ/rasa_nlu) for natural language understanding with intent classification and entity extraction.
+- [Rasa Core](https://github.com/RasaHQ/rasa_core) for machine learning-based dialogue management.
+- [Requests](http://docs.python-requests.org/en/master/) for easy API requests.
+- [Boto 3 - The AWS SDK for Python](https://github.com/boto/boto3) for accesing AWS services.
+- [Dateparser](https://github.com/scrapinghub/dateparser) for parsing human readable dates.
