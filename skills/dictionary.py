@@ -1,6 +1,7 @@
 from nltk.corpus import wordnet as wn
 import random
 
+
 def get_dictionary(result):
     response = {
         "tts": "",
@@ -34,18 +35,22 @@ def get_thesaurus(result):
                 lookup = entity["value"]
             if entity["entity"] == "type":
                 category = entity["value"]
-    
+
     if lookup and category:
-        if category == "antonym" or category == "opposite":
+        if category in "antonyms" or category in "opposites":
             antonym = _antonyms(lookup)
-            response["tts"] = f"An {category} of {lookup} is {random.choice(antonym)}"
-            return response
-        response["tts"] = "I'm sorry but I was unable to get that definition."
+            if antonym:
+                response["tts"] = f"{category} of {lookup} is {random.choice(antonym)}"
+                return response
+        elif(category in "synonyms"):
+            synonym = _antonyms(lookup)
+            if synonym:
+                response["tts"] = f"{category} of {lookup} is {random.choice(synonym)}"
+                return response
     response["tts"] = "I'm sorry but I was unable to look that up."
     response["file"] = "lookup_not_found.mp3"
     response["save"] = True
     return response
-
 
 
 def _definition(word):
@@ -57,5 +62,4 @@ def _synonyms(word):
 
 
 def _antonyms(word):
-    antonyms = [antonym.name() for synset in wn.synsets(word) for lem in synset.lemmas() for antonym in lem.antonyms()]
-    return set(antonyms)
+    return tuple(set(antonym.name() for synset in wn.synsets(word) for lem in synset.lemmas() for antonym in lem.antonyms()))

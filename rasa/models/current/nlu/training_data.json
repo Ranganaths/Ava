@@ -2,406 +2,6 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "intent": "bye",
-        "text": "Bye"
-      },
-      {
-        "intent": "bye",
-        "text": "Bye Ava"
-      },
-      {
-        "intent": "bye",
-        "text": "Goodbye"
-      },
-      {
-        "intent": "bye",
-        "text": "Goodbye Ava"
-      },
-      {
-        "intent": "bye",
-        "text": "See you later"
-      },
-      {
-        "intent": "bye",
-        "text": "Talk to you later"
-      },
-      {
-        "intent": "bye",
-        "text": "See you later Ava"
-      },
-      {
-        "intent": "bye",
-        "text": "Talk to you later Ava"
-      },
-      {
-        "intent": "bye",
-        "text": "Goodbye friend"
-      },
-      {
-        "intent": "bye",
-        "text": "bye for now"
-      },
-      {
-        "intent": "bye",
-        "text": "catch you later"
-      },
-      {
-        "intent": "bye",
-        "text": "gotta go"
-      },
-      {
-        "intent": "bye",
-        "text": "See you"
-      },
-      {
-        "intent": "bye",
-        "text": "goodnight"
-      },
-      {
-        "intent": "bye",
-        "text": "have a nice day"
-      },
-      {
-        "intent": "bye",
-        "text": "i'm off"
-      },
-      {
-        "intent": "bye",
-        "text": "see you later alligator"
-      },
-      {
-        "intent": "bye",
-        "text": "we'll speak soon"
-      },
-      {
-        "intent": "bye",
-        "text": "later"
-      },
-      {
-        "intent": "gratitude",
-        "text": "Thanks"
-      },
-      {
-        "intent": "gratitude",
-        "text": "Thank you"
-      },
-      {
-        "intent": "gratitude",
-        "text": "Thank you so much"
-      },
-      {
-        "intent": "gratitude",
-        "text": "Thanks Ava"
-      },
-      {
-        "intent": "gratitude",
-        "text": "Thanks for that"
-      },
-      {
-        "intent": "gratitude",
-        "text": "cheers"
-      },
-      {
-        "intent": "gratitude",
-        "text": "cheers bro"
-      },
-      {
-        "intent": "gratitude",
-        "text": "ok thanks!"
-      },
-      {
-        "intent": "gratitude",
-        "text": "perfect thank you"
-      },
-      {
-        "intent": "gratitude",
-        "text": "thanks a bunch for everything"
-      },
-      {
-        "intent": "gratitude",
-        "text": "thanks for the help"
-      },
-      {
-        "intent": "gratitude",
-        "text": "thanks a lot"
-      },
-      {
-        "intent": "gratitude",
-        "text": "amazing, thanks"
-      },
-      {
-        "intent": "gratitude",
-        "text": "cool, thanks"
-      },
-      {
-        "intent": "gratitude",
-        "text": "cool thank you"
-      },
-      {
-        "intent": "gratitude",
-        "text": "right on"
-      },
-      {
-        "intent": "gratitude",
-        "text": "perfect, thanks"
-      },
-      {
-        "intent": "gratitude",
-        "text": "perfect, thank you"
-      },
-      {
-        "intent": "gratitude",
-        "text": "I appreciate it"
-      },
-      {
-        "intent": "gratitude",
-        "text": "I'm grateful"
-      },
-      {
-        "intent": "gratitude",
-        "text": "Greatly apprciated"
-      },
-      {
-        "intent": "gratitude",
-        "text": "It's appreciated"
-      },
-      {
-        "intent": "gratitude",
-        "text": "gratitude"
-      },
-      {
-        "intent": "gratitude",
-        "text": "thanks very much"
-      },
-      {
-        "intent": "confirm",
-        "text": "yes"
-      },
-      {
-        "intent": "confirm",
-        "text": "correct"
-      },
-      {
-        "intent": "confirm",
-        "text": "that's right"
-      },
-      {
-        "intent": "confirm",
-        "text": "yes sure"
-      },
-      {
-        "intent": "confirm",
-        "text": "sure"
-      },
-      {
-        "intent": "confirm",
-        "text": "absolutely"
-      },
-      {
-        "intent": "confirm",
-        "text": "for sure"
-      },
-      {
-        "intent": "confirm",
-        "text": "yes yes yes"
-      },
-      {
-        "intent": "confirm",
-        "text": "definitely"
-      },
-      {
-        "intent": "confirm",
-        "text": "that's correct"
-      },
-      {
-        "intent": "confirm",
-        "text": "right"
-      },
-      {
-        "intent": "confirm",
-        "text": "correct"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 11,
-            "end": 16,
-            "value": "Alice",
-            "entity": "name"
-          }
-        ],
-        "text": "My name is Alice"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 5,
-            "end": 9,
-            "value": "Josh",
-            "entity": "name"
-          }
-        ],
-        "text": "I am Josh"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 4,
-            "end": 8,
-            "value": "Lucy",
-            "entity": "name"
-          }
-        ],
-        "text": "I'm Lucy"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 15,
-            "end": 19,
-            "value": "Greg",
-            "entity": "name"
-          }
-        ],
-        "text": "People call me Greg"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 5,
-            "end": 10,
-            "value": "David",
-            "entity": "name"
-          }
-        ],
-        "text": "It's David"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 23,
-            "end": 26,
-            "value": "Amy",
-            "entity": "name"
-          }
-        ],
-        "text": "Usually people call me Amy"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 11,
-            "end": 15,
-            "value": "John",
-            "entity": "name"
-          }
-        ],
-        "text": "My name is John"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 16,
-            "end": 19,
-            "value": "Sam",
-            "entity": "name"
-          }
-        ],
-        "text": "You can call me Sam"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 15,
-            "end": 20,
-            "value": "Linda",
-            "entity": "name"
-          }
-        ],
-        "text": "Please call me Linda"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 13,
-            "end": 16,
-            "value": "Tom",
-            "entity": "name"
-          }
-        ],
-        "text": "Name name is Tom"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 5,
-            "end": 12,
-            "value": "Richard",
-            "entity": "name"
-          }
-        ],
-        "text": "I am Richard"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 4,
-            "end": 9,
-            "value": "Tracy",
-            "entity": "name"
-          }
-        ],
-        "text": "I'm Tracy"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 8,
-            "end": 13,
-            "value": "Sally",
-            "entity": "name"
-          }
-        ],
-        "text": "Call me Sally"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 5,
-            "end": 12,
-            "value": "Philipp",
-            "entity": "name"
-          }
-        ],
-        "text": "I am Philipp"
-      },
-      {
-        "intent": "user_name",
-        "entities": [
-          {
-            "start": 5,
-            "end": 12,
-            "value": "Charlie",
-            "entity": "name"
-          }
-        ],
-        "text": "I am Charlie"
-      },
-      {
         "intent": "get_restaurant",
         "text": "I'm looking for a place to eat"
       },
@@ -1402,27 +1002,147 @@
         "text": "play previous song"
       },
       {
-        "intent": "get_time",
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "date",
+            "entity": "tempus"
+          }
+        ],
+        "text": "What date is it?"
+      },
+      {
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "date",
+            "entity": "tempus"
+          }
+        ],
+        "text": "Can you give me the date?"
+      },
+      {
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "date",
+            "entity": "tempus"
+          }
+        ],
+        "text": "Can you tell me the date?"
+      },
+      {
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "date",
+            "entity": "tempus"
+          }
+        ],
+        "text": "What is the date?"
+      },
+      {
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "date",
+            "entity": "tempus"
+          }
+        ],
+        "text": "What's the current date?"
+      },
+      {
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "date",
+            "entity": "tempus"
+          }
+        ],
+        "text": "what's the date?"
+      },
+      {
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "time",
+            "entity": "tempus"
+          }
+        ],
         "text": "What time is it?"
       },
       {
-        "intent": "get_time",
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "time",
+            "entity": "tempus"
+          }
+        ],
         "text": "Can you give me the time?"
       },
       {
-        "intent": "get_time",
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "time",
+            "entity": "tempus"
+          }
+        ],
         "text": "Can you tell me the time?"
       },
       {
-        "intent": "get_time",
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "time",
+            "entity": "tempus"
+          }
+        ],
         "text": "What is the time?"
       },
       {
-        "intent": "get_time",
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "time",
+            "entity": "tempus"
+          }
+        ],
         "text": "What's the current time?"
       },
       {
-        "intent": "get_time",
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "time",
+            "entity": "tempus"
+          }
+        ],
         "text": "what's the time?"
       },
       {
@@ -1741,6 +1461,54 @@
         "intent": "get_dictionary",
         "entities": [
           {
+            "start": 23,
+            "end": 31,
+            "value": "tomorrow",
+            "entity": "key"
+          }
+        ],
+        "text": "Definition of the word tomorrow"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "describe",
+            "entity": "key"
+          }
+        ],
+        "text": "Definition of the word describe"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "plant",
+            "entity": "key"
+          }
+        ],
+        "text": "Definition of the word plant"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "unpublicized",
+            "entity": "key"
+          }
+        ],
+        "text": "Definition of the word unpublicized"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
             "start": 7,
             "end": 12,
             "value": "trust",
@@ -1753,6 +1521,102 @@
         "intent": "get_dictionary",
         "entities": [
           {
+            "start": 7,
+            "end": 13,
+            "value": "quartz",
+            "entity": "key"
+          }
+        ],
+        "text": "Define quartz"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "nozzle",
+            "entity": "key"
+          }
+        ],
+        "text": "Define nozzle"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "vocalize",
+            "entity": "key"
+          }
+        ],
+        "text": "Define vocalize"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "jumper",
+            "entity": "key"
+          }
+        ],
+        "text": "Define jumper"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "red",
+            "entity": "key"
+          }
+        ],
+        "text": "Define red"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 19,
+            "value": "jeopardizing",
+            "entity": "key"
+          }
+        ],
+        "text": "Define jeopardizing"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "jockey",
+            "entity": "key"
+          }
+        ],
+        "text": "Define jockey"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "puzzles",
+            "entity": "key"
+          }
+        ],
+        "text": "Define puzzles"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
             "start": 16,
             "end": 20,
             "value": "sand",
@@ -1760,6 +1624,66 @@
           }
         ],
         "text": "Define the word sand"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "jazz",
+            "entity": "key"
+          }
+        ],
+        "text": "Define the word jazz"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "immunize",
+            "entity": "key"
+          }
+        ],
+        "text": "Define the word immunize"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 31,
+            "end": 35,
+            "value": "buzz",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the meaning of the word buzz"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "value": "quickest",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the meaning of the word quickest"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 31,
+            "end": 43,
+            "value": "subjectively",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the meaning of the word subjectively"
       },
       {
         "intent": "get_dictionary",
@@ -1786,6 +1710,30 @@
         "text": "What is the meaning of machine"
       },
       {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "jobs",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of jobs"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 32,
+            "end": 40,
+            "value": "minimize",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of the word minimize"
+      },
+      {
         "intent": "get_thesaurus",
         "entities": [
           {
@@ -1802,6 +1750,42 @@
           }
         ],
         "text": "What's the antonym of down"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 12,
+            "end": 21,
+            "value": "misinform",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym for misinform"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Antonyms",
+            "entity": "type"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "value": "lie",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonyms for lie"
       },
       {
         "intent": "get_thesaurus",
@@ -1844,18 +1828,54 @@
         "entities": [
           {
             "start": 0,
+            "end": 8,
+            "value": "Antonyms",
+            "entity": "type"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "value": "expert",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonyms of the word expert"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
             "end": 7,
             "value": "Antonym",
             "entity": "type"
           },
           {
             "start": 20,
-            "end": 26,
-            "value": "expert",
+            "end": 32,
+            "value": "tranquilizer",
             "entity": "key"
           }
         ],
-        "text": "Antonym of the word expert"
+        "text": "Antonym of the word tranquilizer"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "antonyms",
+            "entity": "type"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "expansion",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the antonyms of the word expansion"
       },
       {
         "intent": "get_thesaurus",
@@ -1868,12 +1888,66 @@
           },
           {
             "start": 32,
-            "end": 41,
-            "value": "expansion",
+            "end": 36,
+            "value": "bear",
             "entity": "key"
           }
         ],
-        "text": "What is the antonym of the word expansion"
+        "text": "What is the antonym of the word bear"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "antonym",
+            "entity": "type"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "produce",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the antonym of thew word produce"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "synonyms",
+            "entity": "type"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "explosive",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the synonyms of the word explosive"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "synonym",
+            "entity": "type"
+          },
+          {
+            "start": 32,
+            "end": 40,
+            "value": "initiate",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the synonym of the word initiate"
       },
       {
         "intent": "get_thesaurus",
@@ -1915,6 +1989,42 @@
         "intent": "get_thesaurus",
         "entities": [
           {
+            "start": 12,
+            "end": 20,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 24,
+            "end": 29,
+            "value": "forge",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the opposite of forge"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Synonyms",
+            "entity": "type"
+          },
+          {
+            "start": 12,
+            "end": 22,
+            "value": "Strategies",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonyms of Strategies"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
             "start": 0,
             "end": 7,
             "value": "Synonym",
@@ -1922,12 +2032,12 @@
           },
           {
             "start": 11,
-            "end": 21,
-            "value": "Strategies",
+            "end": 17,
+            "value": "invent",
             "entity": "key"
           }
         ],
-        "text": "Synonym of Strategies"
+        "text": "Synonym of invent"
       },
       {
         "intent": "get_thesaurus",
@@ -1951,13 +2061,19 @@
         "intent": "get_thesaurus",
         "entities": [
           {
-            "start": 32,
-            "end": 41,
-            "value": "explosive",
+            "start": 0,
+            "end": 8,
+            "value": "Synonyms",
+            "entity": "type"
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "value": "discover",
             "entity": "key"
           }
         ],
-        "text": "What is the Synonym of the word explosive"
+        "text": "Synonyms of discover"
       }
     ],
     "regex_features": [],

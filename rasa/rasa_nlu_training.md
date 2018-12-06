@@ -1,87 +1,5 @@
 <!--- Make sure to update this training data file with more training examples from https://forum.rasa.com/t/grab-the-nlu-training-dataset-and-starter-packs/903 -->
 
-## intent:bye
-
-- Bye
-- Bye Ava
-- Goodbye
-- Goodbye Ava
-- See you later
-- Talk to you later
-- See you later Ava
-- Talk to you later Ava
-- Goodbye friend
-- bye for now
-- catch you later
-- gotta go
-- See you
-- goodnight
-- have a nice day
-- i'm off
-- see you later alligator
-- we'll speak soon
-- later
-
-## intent:gratitude
-
-- Thanks
-- Thank you
-- Thank you so much
-- Thanks Ava
-- Thanks for that
-- cheers
-- cheers bro
-- ok thanks!
-- perfect thank you
-- thanks a bunch for everything
-- thanks for the help
-- thanks a lot
-- amazing, thanks
-- cool, thanks
-- cool thank you
-- right on
-- perfect, thanks
-- perfect, thank you
-- I appreciate it
-- I'm grateful
-- Greatly apprciated
-- It's appreciated
-- gratitude
-- thanks very much
-
-## intent:confirm
-
-- yes
-- correct
-- that's right
-- yes sure
-- sure
-- absolutely
-- for sure
-- yes yes yes
-- definitely
-- that's correct
-- right
-- correct
-
-## intent:user_name
-
-- My name is [Alice](name) <!--- Square brackets contain the value of entity while the text inside the parentheses is a a label of the entity -->
-- I am [Josh](name)
-- I'm [Lucy](name)
-- People call me [Greg](name)
-- It's [David](name)
-- Usually people call me [Amy](name)
-- My name is [John](name)
-- You can call me [Sam](name)
-- Please call me [Linda](name)
-- Name name is [Tom](name)
-- I am [Richard](name)
-- I'm [Tracy](name)
-- Call me [Sally](name)
-- I am [Philipp](name)
-- I am [Charlie](name)
-
 ## intent:get_restaurant
 
 - I'm looking for a place to eat
@@ -188,14 +106,20 @@
 - [previous](action) song
 - [play](action) [previous](action) song
 
-## intent:get_time
+## intent:get_datetime
 
-- What time is it?
-- Can you give me the time?
-- Can you tell me the time?
-- What is the time?
-- What's the current time?
-- what's the time?
+- What [date](tempus) is it?
+- Can you give me the [date](tempus)?
+- Can you tell me the [date](tempus)?
+- What is the [date](tempus)?
+- What's the current [date](tempus)?
+- what's the [date](tempus)?
+- What [time](tempus) is it?
+- Can you give me the [time](tempus)?
+- Can you tell me the [time](tempus)?
+- What is the [time](tempus)?
+- What's the current [time](tempus)?
+- what's the [time](tempus)?
 
 ## intent:run_program
 
@@ -228,23 +152,51 @@
 ## intent:get_dictionary
 
 - Definition of the word [carrot](key)
+- Definition of the word [tomorrow](key)
+- Definition of the word [describe](key)
+- Definition of the word [plant](key)
+- Definition of the word [unpublicized](key)
 - Define [trust](key)
+- Define [quartz](key)
+- Define [nozzle](key)
+- Define [vocalize](key)
+- Define [jumper](key)
+- Define [red](key)
+- Define [jeopardizing](key)
+- Define [jockey](key)
+- Define [puzzles](key)
 - Define the word [sand](key)
+- Define the word [jazz](key)
+- Define the word [immunize](key)
+- What's the meaning of the word [buzz](key)
+- What's the meaning of the word [quickest](key)
+- What's the meaning of the word [subjectively](key)
 - What's the meaning of the word [smart](key)
 - What is the meaning of [machine](key)
+- What is the meaning of [jobs](key)
+- What is the meaning of the word [minimize](key)
 
 ## intent:get_thesaurus
 
 - What's the [antonym](type) of [down](key)
+- [Antonym](type) for [misinform](key)
+- [Antonyms](type) for [lie](key)
 - What's the [opposite](type) of [happy](key)
 - [Antonym](type) of [orange](key)
-- [Antonym](type) of the word [expert](key)
-- What is the [antonym](type) of the word [expansion](key)
+- [Antonyms](type) of the word [expert](key)
+- [Antonym](type) of the word [tranquilizer](key)
+- What is the [antonyms](type) of the word [expansion](key)
+- What is the [antonym](type) of the word [bear](key)
+- What is the [antonym](type) of thew word [produce](key)
+- What is the [synonyms](type) of the word [explosive](key)
+- What is the [synonym](type) of the word [initiate](key)
 - What's the [synonym](type) of [down](key)
 - What's the [opposite](type) of [understanding](key)
-- [Synonym](type) of [Strategies](key)
+- What is the [opposite](type) of [forge](key)
+- [Synonyms](type) of [Strategies](key)
+- [Synonym](type) of [invent](key)
 - [Synonym](type) of the word [confidence](key)
-- What is the Synonym of the word [explosive](key)
+- [Synonyms](type) of [discover](key)
 
 <!-- ## intent:light_control
 
@@ -295,5 +247,85 @@
 - how's the market doing?
 - is [bitcoin](ticker) up or down?
 
+## intent:bye
 
+- Bye
+- Bye Ava
+- Goodbye
+- Goodbye Ava
+- See you later
+- Talk to you later
+- See you later Ava
+- Talk to you later Ava
+- Goodbye friend
+- bye for now
+- catch you later
+- gotta go
+- See you
+- goodnight
+- have a nice day
+- i'm off
+- see you later alligator
+- we'll speak soon
+- later
+
+## intent:gratitude
+
+- Thanks
+- Thank you
+- Thank you so much
+- Thanks Ava
+- Thanks for that
+- cheers
+- cheers bro
+- ok thanks!
+- perfect thank you
+- thanks a bunch for everything
+- thanks for the help
+- thanks a lot
+- amazing, thanks
+- cool, thanks
+- cool thank you
+- right on
+- perfect, thanks
+- perfect, thank you
+- I appreciate it
+- I'm grateful
+- Greatly apprciated
+- It's appreciated
+- gratitude
+- thanks very much
+
+## intent:confirm
+
+- yes
+- correct
+- that's right
+- yes sure
+- sure
+- absolutely
+- for sure
+- yes yes yes
+- definitely
+- that's correct
+- right
+- correct
+
+## intent:user_name
+
+- My name is [Alice](name)
+- I am [Josh](name)
+- I'm [Lucy](name)
+- People call me [Greg](name)
+- It's [David](name)
+- Usually people call me [Amy](name)
+- My name is [John](name)
+- You can call me [Sam](name)
+- Please call me [Linda](name)
+- Name name is [Tom](name)
+- I am [Richard](name)
+- I'm [Tracy](name)
+- Call me [Sally](name)
+- I am [Philipp](name)
+- I am [Charlie](name)
 -->

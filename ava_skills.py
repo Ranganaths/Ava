@@ -25,8 +25,8 @@ class AvaSkills():
     def get_restaurant(self, result):
         return restaurant.get_restaurant(result, self._zomato_city_id, self._zomato_cuisines, self._zomato_establishments)
 
-    def get_time(self, result):
-        return clock.get_time(result)
+    def get_datetime(self, result):
+        return clock.get_datetime(result)
 
     def run_program(self, result):
         return programs.run_program(result)

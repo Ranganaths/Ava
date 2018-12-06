@@ -134,7 +134,8 @@ class Ava (AvaSkills):
             print("Executing intent action...")
             response = getattr(self, intent)(result)
             print(f"RESULT: {response}")
-            self.respond_intent_result(response)
+            if(response):
+                self.respond_intent_result(response)
         except Exception as e:
             print(f"Failed intent action...\n\tERROR: {e} ")
 
