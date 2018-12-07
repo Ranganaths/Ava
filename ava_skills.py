@@ -12,9 +12,20 @@ class AvaSkills():
         self._zomato_establishments = restaurant.get_categories(
             self._zomato_city_id, "establishments")
 
-    def get_weather(self, result, source="weather"):
-        # Returns the results of the weather module in the skills package.
-        return weather.get_weather(result=result, source=source)
+    def get_datetime(self, result):
+        return clock.get_datetime(result)
+
+    def get_dictionary(self, result):
+        return dictionary.get_dictionary(result)
+
+    def run_program(self, result):
+        return programs.run_program(result)
+
+    def get_restaurant(self, result):
+        return restaurant.get_restaurant(result, self._zomato_city_id, self._zomato_cuisines, self._zomato_establishments)
+
+    def get_status(self, result):
+        return salutations.get_status()
 
     def get_temperature(self, result):
         # get_temperature is an extention of the get_weather action. Rather than create a new similar function
@@ -22,17 +33,9 @@ class AvaSkills():
         # values based on who the original caller was.
         return self.get_weather(result=result, source="temperature")
 
-    def get_restaurant(self, result):
-        return restaurant.get_restaurant(result, self._zomato_city_id, self._zomato_cuisines, self._zomato_establishments)
-
-    def get_datetime(self, result):
-        return clock.get_datetime(result)
-
-    def run_program(self, result):
-        return programs.run_program(result)
-
-    def get_dictionary(self, result):
-        return dictionary.get_dictionary(result)
-
     def get_thesaurus(self, result):
         return dictionary.get_thesaurus(result)
+
+    def get_weather(self, result, source="weather"):
+        # Returns the results of the weather module in the skills package.
+        return weather.get_weather(result=result, source=source)

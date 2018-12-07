@@ -1,6 +1,7 @@
 /old-fxml
 /.vscode
 /__pycache__
+/skills/__pycache__
 ava_api_keys.py
 text.log
 *.mp3
