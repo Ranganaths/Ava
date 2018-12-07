@@ -27,7 +27,7 @@ Now that Ava has responded she returns to an active listening stage awaiting her
 - ~~Get Status: Ava how are you doing?~~
 - ~~Get Weather: Is it sunny?~~
   - ~~Get Temperature: Is it freezing?~~
-- Unit Conversion: How many ounces in a cup.
+- ~~Unit Conversion: How many ounces in a cup.~~
 - ~~Get Definition: What does Hakuna Matata mean?~~
   - ~~Get Synonyms: Another word for awesome.~~
   - ~~Get Antonym: Opposite of misnomer.~~
@@ -61,6 +61,7 @@ Now that Ava has responded she returns to an active listening stage awaiting her
 ### Python Libraries (Non-Standard)
 
 - [Speech_Recognition](https://github.com/Uberi/speech_recognition) for Speech to Text.
+- [Pint](https://pint.readthedocs.io/en/latest/) for unit conversion of one unit to another i.e. ounces to lbs.
 - [Pocketsphinx-Python](https://github.com/cmusphinx/pocketsphinx-python) for Speech to Text and Key Word Recognition.
 - [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/) for microphone stream bytes.
 - [PyDub](https://github.com/jiaaro/pydub) for audio playback from file or byte stream.

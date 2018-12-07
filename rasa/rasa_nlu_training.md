@@ -343,7 +343,7 @@
 - Convert [1](amount) [centimer](base) to [yards](conversion)
 - Convert [87](amount) [mile](base) to [inches](conversion)
 - Convert [1000](amount) [yard](base) to [centimeters](conversion)
-- Convert [426589] (amount) [inches](base) to [feet](conversion)
+- Convert [426589](amount) [inches](base) to [feet](conversion)
 - Convert [1](amount) [cup](base) to [fluids](conversion)
 - Convert [91](amount) [pints](base) to [cups](conversion)
 - Convert [1000](amount) [quarts](base) to [gallons](conversion)
@@ -352,30 +352,42 @@
 - Convert [15](amount) [cups](base) to [quarts](conversion)
 - Convert [7896](amount) [quarts](base) to [pints](conversion)
 - Convert [753695](amount) [pints](base) to [gallons](conversion)
-- How many [seconds] (conversion) in a [minute] (base)?
-- How many [hours] (conversion) in a [year] (base)?
-- How many [minutes] (conversion) in a [hour] (base)?
-- How many [feet] (conversion) in a [mile] (base)?
-- How many [meters] (conversion) in a [kilometer] (base)?
-- How many [inches] (conversion) in a [yard] (base)?
-- How many [cups] (conversion) in a [gallon] (base)?
-- How many [fluids] (conversion) in a [pint] (base)?
-- How many [ounces] (conversion) in a [pound] (base)?
-- How many [seconds] (conversion) in a [1](amount) [minute](base)?
-- How many [hours] (conversion) in a [1](amount) [year](base)?
-- How many [minutes] (conversion) in a [10](amount) [hour](base)?
-- How many [feet] (conversion) in a [10](amount) [miles](base)?
-- How many [meters] (conversion) in a [1](amount) [kilometer](base)?
-- How many [inches] (conversion) in a [100](amount) [yards](base)?
-- How many [cups] (conversion) in a [1000](amount) [gallons](base)?
-- How many [fluids] (conversion) in a [1](amount) [pint](base)?
-- How many [ounces] (conversion) in a [10000](amount) [pounds](base)?
-- [1](amount ) [ounce](base) is how many [cups](conversion)?
+- Convert [5](amount) degress [fahrenheit](base) to [celsius](conversion)
+- Convert [98](amount) degress [fahrenheit](base) to [celsius](conversion)
+- Convert [102](amount) degress [fahrenheit](base) to [celsius](conversion)
+- Convert [0](amount) degress [celsius](base) to [fahrenheit](conversion)
+- Convert [20](amount) degress [celsius](base) to [fahrenheit](conversion)
+- Convert [102](amount) degress [celsius](base) to [fahrenheit](conversion)
+- How many [seconds](conversion) in a [minute](base)?
+- How many [hours](conversion) in a [year](base)?
+- How many [minutes](conversion) in a [hour](base)?
+- How many [feet](conversion) in a [mile](base)?
+- How many [meters](conversion) in a [kilometer](base)?
+- How many [inches](conversion) in a [yard](base)?
+- How many [cups](conversion) in a [gallon](base)?
+- How many [fluids](conversion) in a [pint](base)?
+- How many [ounces](conversion) in a [pound](base)?
+- How many [seconds](conversion) in a [1](amount) [minute](base)?
+- How many [hours](conversion) in a [1](amount) [year](base)?
+- How many [minutes](conversion) in a [10](amount) [hour](base)?
+- How many [feet](conversion) in a [10](amount) [miles](base)?
+- How many [meters](conversion) in a [1](amount) [kilometer](base)?
+- How many [inches](conversion) in a [100](amount) [yards](base)?
+- How many [cups](conversion) in a [1000](amount) [gallons](base)?
+- How many [fluids](conversion) in a [1](amount) [pint](base)?
+- How many [ounces](conversion) in a [10000](amount) [pounds](base)?
+- [1](amount) [ounce](base) is how many [cups](conversion)?
 - [10](amount) [inches](base) is how many [miles](conversion)?
 - [1000](amount) [pints](base) is how many [gallons](conversion)?
 - [1](amount) pound](base) is how many [grams](conversion)?
 - [30](amount) [centimeters](base) is how many [yards](conversion)?
 - [4125](amount) [cups](base) is how many [pints](conversion)?
+- What is [5](amount) degrees [Fahrenheit](base) in [celsius](conversion)?
+- What is [7853](amount) [ounces](base) in [pounds](conversion)?
+- What is [14](amount) [kilograms](base) in [grams](conversion)?
+- What is [72](amount) [fluids](base) in [pints](conversion)?
+- What is [5](amount) [gallons](base) in [cups](conversion)?
+- What is [1475268](amount) [milliseconds](base) in [hours](conversion)?
 
 <!-- ## intent:light_control
 

@@ -9,6 +9,7 @@ import ava_api_keys as keys
 import ava_settings as settings
 import speech_recognition
 import boto3
+from time import time
 
 
 class Ava (AvaSkills):
@@ -120,7 +121,9 @@ class Ava (AvaSkills):
                         self.get_tts(
                             text="I'm sorry, but I was not able to understand that command.", file_name="decode_error.mp3")
             else:
+                t0 = time()
                 self.process_input_intent(hyp)
+                print(f"Time to process command: {time() - t0}")
 
     def process_input_intent(self, hypothesis):
         print("Processing intent...")

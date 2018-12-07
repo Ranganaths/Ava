@@ -4433,19 +4433,25 @@
         "intent": "unit_conversion",
         "entities": [
           {
-            "start": 26,
-            "end": 32,
+            "start": 8,
+            "end": 14,
+            "value": "426589",
+            "entity": "amount"
+          },
+          {
+            "start": 15,
+            "end": 21,
             "value": "inches",
             "entity": "base"
           },
           {
-            "start": 36,
-            "end": 40,
+            "start": 25,
+            "end": 29,
             "value": "feet",
             "entity": "conversion"
           }
         ],
-        "text": "Convert [426589] (amount) inches to feet"
+        "text": "Convert 426589 inches to feet"
       },
       {
         "intent": "unit_conversion",
@@ -4641,201 +4647,525 @@
       },
       {
         "intent": "unit_conversion",
-        "text": "How many [seconds] (conversion) in a [minute] (base)?"
-      },
-      {
-        "intent": "unit_conversion",
-        "text": "How many [hours] (conversion) in a [year] (base)?"
-      },
-      {
-        "intent": "unit_conversion",
-        "text": "How many [minutes] (conversion) in a [hour] (base)?"
-      },
-      {
-        "intent": "unit_conversion",
-        "text": "How many [feet] (conversion) in a [mile] (base)?"
-      },
-      {
-        "intent": "unit_conversion",
-        "text": "How many [meters] (conversion) in a [kilometer] (base)?"
-      },
-      {
-        "intent": "unit_conversion",
-        "text": "How many [inches] (conversion) in a [yard] (base)?"
-      },
-      {
-        "intent": "unit_conversion",
-        "text": "How many [cups] (conversion) in a [gallon] (base)?"
-      },
-      {
-        "intent": "unit_conversion",
-        "text": "How many [fluids] (conversion) in a [pint] (base)?"
-      },
-      {
-        "intent": "unit_conversion",
-        "text": "How many [ounces] (conversion) in a [pound] (base)?"
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "5",
+            "entity": "amount"
+          },
+          {
+            "start": 18,
+            "end": 28,
+            "value": "fahrenheit",
+            "entity": "base"
+          },
+          {
+            "start": 32,
+            "end": 39,
+            "value": "celsius",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 5 degress fahrenheit to celsius"
       },
       {
         "intent": "unit_conversion",
         "entities": [
           {
-            "start": 37,
-            "end": 38,
-            "value": "1",
+            "start": 8,
+            "end": 10,
+            "value": "98",
             "entity": "amount"
           },
           {
-            "start": 39,
-            "end": 45,
+            "start": 19,
+            "end": 29,
+            "value": "fahrenheit",
+            "entity": "base"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "celsius",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 98 degress fahrenheit to celsius"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "102",
+            "entity": "amount"
+          },
+          {
+            "start": 20,
+            "end": 30,
+            "value": "fahrenheit",
+            "entity": "base"
+          },
+          {
+            "start": 34,
+            "end": 41,
+            "value": "celsius",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 102 degress fahrenheit to celsius"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "0",
+            "entity": "amount"
+          },
+          {
+            "start": 18,
+            "end": 25,
+            "value": "celsius",
+            "entity": "base"
+          },
+          {
+            "start": 29,
+            "end": 39,
+            "value": "fahrenheit",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 0 degress celsius to fahrenheit"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "20",
+            "entity": "amount"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "value": "celsius",
+            "entity": "base"
+          },
+          {
+            "start": 30,
+            "end": 40,
+            "value": "fahrenheit",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 20 degress celsius to fahrenheit"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "102",
+            "entity": "amount"
+          },
+          {
+            "start": 20,
+            "end": 27,
+            "value": "celsius",
+            "entity": "base"
+          },
+          {
+            "start": 31,
+            "end": 41,
+            "value": "fahrenheit",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 102 degress celsius to fahrenheit"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "seconds",
+            "entity": "conversion"
+          },
+          {
+            "start": 22,
+            "end": 28,
             "value": "minute",
             "entity": "base"
           }
         ],
-        "text": "How many [seconds] (conversion) in a 1 minute?"
+        "text": "How many seconds in a minute?"
       },
       {
         "intent": "unit_conversion",
         "entities": [
           {
-            "start": 35,
-            "end": 36,
-            "value": "1",
-            "entity": "amount"
+            "start": 9,
+            "end": 14,
+            "value": "hours",
+            "entity": "conversion"
           },
           {
-            "start": 37,
-            "end": 41,
+            "start": 20,
+            "end": 24,
             "value": "year",
             "entity": "base"
           }
         ],
-        "text": "How many [hours] (conversion) in a 1 year?"
+        "text": "How many hours in a year?"
       },
       {
         "intent": "unit_conversion",
         "entities": [
           {
-            "start": 37,
-            "end": 39,
-            "value": "10",
-            "entity": "amount"
+            "start": 9,
+            "end": 16,
+            "value": "minutes",
+            "entity": "conversion"
           },
           {
-            "start": 40,
-            "end": 44,
+            "start": 22,
+            "end": 26,
             "value": "hour",
             "entity": "base"
           }
         ],
-        "text": "How many [minutes] (conversion) in a 10 hour?"
+        "text": "How many minutes in a hour?"
       },
       {
         "intent": "unit_conversion",
         "entities": [
           {
-            "start": 34,
-            "end": 36,
-            "value": "10",
-            "entity": "amount"
+            "start": 9,
+            "end": 13,
+            "value": "feet",
+            "entity": "conversion"
           },
           {
-            "start": 37,
-            "end": 42,
-            "value": "miles",
+            "start": 19,
+            "end": 23,
+            "value": "mile",
             "entity": "base"
           }
         ],
-        "text": "How many [feet] (conversion) in a 10 miles?"
+        "text": "How many feet in a mile?"
       },
       {
         "intent": "unit_conversion",
         "entities": [
           {
-            "start": 36,
-            "end": 37,
-            "value": "1",
-            "entity": "amount"
+            "start": 9,
+            "end": 15,
+            "value": "meters",
+            "entity": "conversion"
           },
           {
-            "start": 38,
-            "end": 47,
+            "start": 21,
+            "end": 30,
             "value": "kilometer",
             "entity": "base"
           }
         ],
-        "text": "How many [meters] (conversion) in a 1 kilometer?"
+        "text": "How many meters in a kilometer?"
       },
       {
         "intent": "unit_conversion",
         "entities": [
           {
-            "start": 36,
-            "end": 39,
-            "value": "100",
-            "entity": "amount"
+            "start": 9,
+            "end": 15,
+            "value": "inches",
+            "entity": "conversion"
           },
           {
-            "start": 40,
-            "end": 45,
-            "value": "yards",
+            "start": 21,
+            "end": 25,
+            "value": "yard",
             "entity": "base"
           }
         ],
-        "text": "How many [inches] (conversion) in a 100 yards?"
+        "text": "How many inches in a yard?"
       },
       {
         "intent": "unit_conversion",
         "entities": [
           {
-            "start": 34,
-            "end": 38,
-            "value": "1000",
-            "entity": "amount"
+            "start": 9,
+            "end": 13,
+            "value": "cups",
+            "entity": "conversion"
           },
           {
-            "start": 39,
-            "end": 46,
-            "value": "gallons",
+            "start": 19,
+            "end": 25,
+            "value": "gallon",
             "entity": "base"
           }
         ],
-        "text": "How many [cups] (conversion) in a 1000 gallons?"
+        "text": "How many cups in a gallon?"
       },
       {
         "intent": "unit_conversion",
         "entities": [
           {
-            "start": 36,
-            "end": 37,
-            "value": "1",
-            "entity": "amount"
+            "start": 9,
+            "end": 15,
+            "value": "fluids",
+            "entity": "conversion"
           },
           {
-            "start": 38,
-            "end": 42,
+            "start": 21,
+            "end": 25,
             "value": "pint",
             "entity": "base"
           }
         ],
-        "text": "How many [fluids] (conversion) in a 1 pint?"
+        "text": "How many fluids in a pint?"
       },
       {
         "intent": "unit_conversion",
         "entities": [
           {
-            "start": 36,
-            "end": 41,
+            "start": 9,
+            "end": 15,
+            "value": "ounces",
+            "entity": "conversion"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "pound",
+            "entity": "base"
+          }
+        ],
+        "text": "How many ounces in a pound?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "seconds",
+            "entity": "conversion"
+          },
+          {
+            "start": 22,
+            "end": 23,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "value": "minute",
+            "entity": "base"
+          }
+        ],
+        "text": "How many seconds in a 1 minute?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "hours",
+            "entity": "conversion"
+          },
+          {
+            "start": 20,
+            "end": 21,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "year",
+            "entity": "base"
+          }
+        ],
+        "text": "How many hours in a 1 year?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "minutes",
+            "entity": "conversion"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "value": "10",
+            "entity": "amount"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "value": "hour",
+            "entity": "base"
+          }
+        ],
+        "text": "How many minutes in a 10 hour?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "feet",
+            "entity": "conversion"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "value": "10",
+            "entity": "amount"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "miles",
+            "entity": "base"
+          }
+        ],
+        "text": "How many feet in a 10 miles?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "meters",
+            "entity": "conversion"
+          },
+          {
+            "start": 21,
+            "end": 22,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 23,
+            "end": 32,
+            "value": "kilometer",
+            "entity": "base"
+          }
+        ],
+        "text": "How many meters in a 1 kilometer?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "inches",
+            "entity": "conversion"
+          },
+          {
+            "start": 21,
+            "end": 24,
+            "value": "100",
+            "entity": "amount"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "value": "yards",
+            "entity": "base"
+          }
+        ],
+        "text": "How many inches in a 100 yards?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "cups",
+            "entity": "conversion"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "value": "1000",
+            "entity": "amount"
+          },
+          {
+            "start": 24,
+            "end": 31,
+            "value": "gallons",
+            "entity": "base"
+          }
+        ],
+        "text": "How many cups in a 1000 gallons?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "fluids",
+            "entity": "conversion"
+          },
+          {
+            "start": 21,
+            "end": 22,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "value": "pint",
+            "entity": "base"
+          }
+        ],
+        "text": "How many fluids in a 1 pint?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "ounces",
+            "entity": "conversion"
+          },
+          {
+            "start": 21,
+            "end": 26,
             "value": "10000",
             "entity": "amount"
           },
           {
-            "start": 42,
-            "end": 48,
+            "start": 27,
+            "end": 33,
             "value": "pounds",
             "entity": "base"
           }
         ],
-        "text": "How many [ounces] (conversion) in a 10000 pounds?"
+        "text": "How many ounces in a 10000 pounds?"
       },
       {
         "intent": "unit_conversion",
@@ -4844,7 +5174,7 @@
             "start": 0,
             "end": 1,
             "value": "1",
-            "entity": "amount "
+            "entity": "amount"
           },
           {
             "start": 2,
@@ -4974,6 +5304,150 @@
           }
         ],
         "text": "4125 cups is how many pints?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "5",
+            "entity": "amount"
+          },
+          {
+            "start": 18,
+            "end": 28,
+            "value": "Fahrenheit",
+            "entity": "base"
+          },
+          {
+            "start": 32,
+            "end": 39,
+            "value": "celsius",
+            "entity": "conversion"
+          }
+        ],
+        "text": "What is 5 degrees Fahrenheit in celsius?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "7853",
+            "entity": "amount"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "value": "ounces",
+            "entity": "base"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "value": "pounds",
+            "entity": "conversion"
+          }
+        ],
+        "text": "What is 7853 ounces in pounds?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "14",
+            "entity": "amount"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "value": "kilograms",
+            "entity": "base"
+          },
+          {
+            "start": 24,
+            "end": 29,
+            "value": "grams",
+            "entity": "conversion"
+          }
+        ],
+        "text": "What is 14 kilograms in grams?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "72",
+            "entity": "amount"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "fluids",
+            "entity": "base"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "pints",
+            "entity": "conversion"
+          }
+        ],
+        "text": "What is 72 fluids in pints?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "5",
+            "entity": "amount"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "gallons",
+            "entity": "base"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "value": "cups",
+            "entity": "conversion"
+          }
+        ],
+        "text": "What is 5 gallons in cups?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "1475268",
+            "entity": "amount"
+          },
+          {
+            "start": 16,
+            "end": 28,
+            "value": "milliseconds",
+            "entity": "base"
+          },
+          {
+            "start": 32,
+            "end": 37,
+            "value": "hours",
+            "entity": "conversion"
+          }
+        ],
+        "text": "What is 1475268 milliseconds in hours?"
       }
     ],
     "regex_features": [],
