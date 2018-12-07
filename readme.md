@@ -24,7 +24,7 @@ Now that Ava has responded she returns to an active listening stage awaiting her
 
 ## Available and Planned Skills
 
-- Get Status: Ava how are you doing?
+- ~~Get Status: Ava how are you doing?~~
 - ~~Get Weather: Is it sunny?~~
   - ~~Get Temperature: Is it freezing?~~
 - Unit Conversion: How many ounces in a cup.
