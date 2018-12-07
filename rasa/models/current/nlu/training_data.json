@@ -3,19 +3,7 @@
     "common_examples": [
       {
         "intent": "get_restaurant",
-        "text": "I'm looking for a place to eat"
-      },
-      {
-        "intent": "get_restaurant",
-        "text": "I want to grab lunch"
-      },
-      {
-        "intent": "get_restaurant",
-        "text": "I am searching for a dinner spot"
-      },
-      {
-        "intent": "get_restaurant",
-        "text": "I'm hungry"
+        "text": "Any good food around here"
       },
       {
         "intent": "get_restaurant",
@@ -23,85 +11,59 @@
       },
       {
         "intent": "get_restaurant",
-        "entities": [
-          {
-            "start": 27,
-            "end": 32,
-            "value": "Asian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "I could really go for some Asian food"
+        "text": "I am hungry, what do you recommend?"
       },
       {
         "intent": "get_restaurant",
-        "text": "where should we eat"
-      },
-      {
-        "intent": "get_restaurant",
-        "text": "I'm starving"
-      },
-      {
-        "intent": "get_restaurant",
-        "text": "I'm starving what should i eat"
+        "text": "I am hungry, what should I eat?"
       },
       {
         "intent": "get_restaurant",
         "entities": [
           {
-            "start": 31,
-            "end": 36,
-            "value": "north",
+            "start": 29,
+            "end": 34,
+            "value": "98119",
             "entity": "location"
           }
         ],
-        "text": "I'm looking for a place in the north of town to eat"
+        "text": "I am looking a restaurant in 98119?"
       },
       {
         "intent": "get_restaurant",
         "entities": [
           {
-            "start": 8,
-            "end": 15,
-            "value": "Chinese",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "Show me Chinese restaurants"
-      },
-      {
-        "intent": "get_restaurant",
-        "entities": [
-          {
-            "start": 10,
-            "end": 17,
-            "value": "Mexican",
-            "entity": "cuisine"
-          },
-          {
-            "start": 31,
-            "end": 37,
-            "value": "centre",
+            "start": 29,
+            "end": 34,
+            "value": "98103",
             "entity": "location"
           }
         ],
-        "text": "Show me a Mexican place in the centre"
+        "text": "I am looking a restaurant in 98103?"
       },
       {
         "intent": "get_restaurant",
         "entities": [
           {
-            "start": 20,
-            "end": 26,
-            "value": "Indian",
-            "entity": "cuisine"
+            "start": 29,
+            "end": 34,
+            "value": "98109",
+            "entity": "location"
           }
         ],
-        "text": "I am looking for an Indian spot"
+        "text": "I am looking a restaurant in 98109?"
       },
       {
         "intent": "get_restaurant",
-        "text": "Search for Restaurants"
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "98122",
+            "entity": "location"
+          }
+        ],
+        "text": "I am looking a restaurant in 98122?"
       },
       {
         "intent": "get_restaurant",
@@ -113,67 +75,159 @@
             "entity": "cuisine"
           }
         ],
-        "text": "I am looking for asian fusion food"
+        "text": "I am looking for asian fusion food?"
       },
       {
         "intent": "get_restaurant",
         "entities": [
           {
-            "start": 29,
+            "start": 17,
+            "end": 25,
+            "value": "American",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I am looking for American food)?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "Thai",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I am looking for Thai food?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 17,
+            "end": 20,
+            "value": "BBQ",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I am looking for BBQ food?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "Indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I am looking for an Indian spot?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "Chinese",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I am looking for an Chinese spot?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "Burger",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I am looking for an Burger spot?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "Pizza",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I am looking for an Pizza spot?"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "I am searching for a dinner spot?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "Asian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I could really go for some Asian food."
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 27,
             "end": 34,
-            "value": "29432",
-            "entity": "location"
+            "value": "Burgers",
+            "entity": "cuisine"
           }
         ],
-        "text": "I am looking a restaurant in 29432"
+        "text": "I could really go for some Burgers."
       },
       {
         "intent": "get_restaurant",
         "entities": [
           {
-            "start": 14,
-            "end": 17,
-            "value": "bbq",
+            "start": 27,
+            "end": 36,
+            "value": "Caribbean",
             "entity": "cuisine"
-          },
-          {
-            "start": 25,
-            "end": 29,
-            "value": "here",
-            "entity": "location"
           }
         ],
-        "text": "Is there good bbq around here"
+        "text": "I could really go for some Caribbean food."
       },
       {
         "intent": "get_restaurant",
         "entities": [
           {
-            "start": 11,
-            "end": 18,
-            "value": "closest",
-            "entity": "location"
-          },
-          {
-            "start": 19,
-            "end": 28,
-            "value": "fast food",
+            "start": 27,
+            "end": 32,
+            "value": "Cuban",
             "entity": "cuisine"
           }
         ],
-        "text": "What's the closest fast food"
+        "text": "I could really go for some Cuban food."
       },
       {
         "intent": "get_restaurant",
-        "text": "What should I eat?"
+        "entities": [
+          {
+            "start": 27,
+            "end": 34,
+            "value": "Italian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I could really go for some Italian food."
       },
       {
         "intent": "get_restaurant",
-        "text": "Any good food around here"
-      },
-      {
-        "intent": "get_restaurant",
-        "text": "Whats the best place to eat"
+        "text": "I want to grab lunch?"
       },
       {
         "intent": "get_restaurant",
@@ -185,55 +239,59 @@
             "entity": "cuisine"
           }
         ],
-        "text": "I'd like some Chinese food"
+        "text": "I'd like some Chinese food?"
       },
       {
         "intent": "get_restaurant",
         "entities": [
           {
-            "start": 15,
-            "end": 19,
-            "value": "thai",
+            "start": 14,
+            "end": 23,
+            "value": "Cantonese",
             "entity": "cuisine"
-          },
-          {
-            "start": 28,
-            "end": 35,
-            "value": "ballard",
-            "entity": "location"
           }
         ],
-        "text": "Whats the best thai food in ballard"
+        "text": "I'd like some Cantonese food?"
       },
       {
         "intent": "get_restaurant",
         "entities": [
           {
-            "start": 26,
-            "end": 29,
-            "value": "now",
-            "entity": "time"
-          }
-        ],
-        "text": "What restaurants are open now"
-      },
-      {
-        "intent": "get_restaurant",
-        "entities": [
-          {
-            "start": 5,
-            "end": 9,
-            "value": "thai",
+            "start": 14,
+            "end": 21,
+            "value": "Dim Sum",
             "entity": "cuisine"
-          },
-          {
-            "start": 31,
-            "end": 40,
-            "value": "right now",
-            "entity": "time"
           }
         ],
-        "text": "What thai restaurants are open right now"
+        "text": "I'd like some Dim Sum food?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "Ethiopian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I'd like some Ethiopian food?"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "I'm hungry?"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "I'm looking for a place to eat?"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "I'm starving?"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "I'm starving what should i eat?"
       },
       {
         "intent": "get_restaurant",
@@ -251,89 +309,317 @@
             "entity": "location"
           }
         ],
-        "text": "Is there any good indian around here"
+        "text": "Is there any good indian around here?"
       },
       {
-        "intent": "get_weather",
-        "text": "What's the weather like"
-      },
-      {
-        "intent": "get_weather",
+        "intent": "get_restaurant",
         "entities": [
           {
-            "start": 11,
-            "end": 18,
-            "value": "current",
-            "entity": "time"
+            "start": 18,
+            "end": 25,
+            "value": "chinese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "value": "here",
+            "entity": "location"
           }
         ],
-        "text": "What's the current weather"
+        "text": "Is there any good chinese around here?"
       },
       {
-        "intent": "get_weather",
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 14,
+            "end": 17,
+            "value": "bbq",
+            "entity": "cuisine"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "value": "here",
+            "entity": "location"
+          }
+        ],
+        "text": "Is there good bbq around here?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "pizza",
+            "entity": "cuisine"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "value": "here",
+            "entity": "location"
+          }
+        ],
+        "text": "Is there good pizza around here?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 14,
+            "end": 24,
+            "value": "Vietnamese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "value": "here",
+            "entity": "location"
+          }
+        ],
+        "text": "Is there good Vietnamese around here?"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "Search for Restaurants?"
+      },
+      {
+        "intent": "get_restaurant",
         "entities": [
           {
             "start": 8,
             "end": 15,
-            "value": "today's",
+            "value": "Chinese",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "Show me Chinese restaurants?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "Mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "value": "centre",
+            "entity": "location"
+          }
+        ],
+        "text": "Show me a Mexican place in the centre?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "thai",
+            "entity": "cuisine"
+          },
+          {
+            "start": 31,
+            "end": 40,
+            "value": "right now",
             "entity": "time"
           }
         ],
-        "text": "What is today's weather"
+        "text": "What thai restaurants are open right now?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 26,
+            "end": 29,
+            "value": "now",
+            "entity": "time"
+          }
+        ],
+        "text": "What restaurants are open now?"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "What should I eat?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "closest",
+            "entity": "location"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "value": "fast food",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "What's the closest fast food?"
+      },
+      {
+        "intent": "get_restaurant",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "thai",
+            "entity": "cuisine"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "value": "ballard",
+            "entity": "location"
+          }
+        ],
+        "text": "Whats the best thai food in ballard?"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "Whats the best place to eat?"
+      },
+      {
+        "intent": "get_restaurant",
+        "text": "Where should we eat?"
       },
       {
         "intent": "get_weather",
         "entities": [
           {
-            "start": 11,
-            "end": 16,
+            "start": 6,
+            "end": 13,
+            "value": "raining",
+            "entity": "weather"
+          }
+        ],
+        "text": "Is it raining?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "snowing",
+            "entity": "weather"
+          }
+        ],
+        "text": "Is it snowing?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
             "value": "sunny",
             "entity": "weather"
-          },
-          {
-            "start": 17,
-            "end": 22,
-            "value": "today",
-            "entity": "time"
           }
         ],
-        "text": "Will it be sunny today"
+        "text": "Is it sunny?"
       },
       {
         "intent": "get_weather",
         "entities": [
           {
-            "start": 11,
-            "end": 16,
-            "value": "rainy",
-            "entity": "weather"
-          },
-          {
-            "start": 17,
-            "end": 22,
-            "value": "today",
-            "entity": "time"
-          }
-        ],
-        "text": "Will it be rainy today"
-      },
-      {
-        "intent": "get_weather",
-        "entities": [
-          {
-            "start": 11,
-            "end": 17,
+            "start": 6,
+            "end": 12,
             "value": "cloudy",
             "entity": "weather"
           },
           {
-            "start": 18,
-            "end": 23,
-            "value": "today",
-            "entity": "time"
+            "start": 24,
+            "end": 29,
+            "value": "94608",
+            "entity": "location"
           }
         ],
-        "text": "Will it be cloudy today"
+        "text": "Is it cloudy in zipcode 94608"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "clear",
+            "entity": "weather"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "98105",
+            "entity": "location"
+          }
+        ],
+        "text": "Is it clear in zipcode 98105"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 6,
+            "end": 12,
+            "value": "cloudy",
+            "entity": "weather"
+          },
+          {
+            "start": 24,
+            "end": 29,
+            "value": "97899",
+            "entity": "location"
+          }
+        ],
+        "text": "Is it cloudy in zipcode 97899"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "Los Angeles",
+            "entity": "location"
+          }
+        ],
+        "text": "Is it sunny in Los Angeles?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 17,
+            "end": 26,
+            "value": "San Diego",
+            "entity": "location"
+          }
+        ],
+        "text": "Is it raining in San Diego?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "Kansas",
+            "entity": "location"
+          }
+        ],
+        "text": "Is it cloudy in Kansas?"
       },
       {
         "intent": "get_weather",
@@ -341,11 +627,11 @@
           {
             "start": 8,
             "end": 18,
-            "value": "tomorrow's",
-            "entity": "time"
+            "value": "New York's",
+            "entity": "location"
           }
         ],
-        "text": "What is tomorrow's weather"
+        "text": "What is New York's weather"
       },
       {
         "intent": "get_weather",
@@ -363,115 +649,25 @@
         "intent": "get_weather",
         "entities": [
           {
-            "start": 11,
-            "end": 16,
-            "value": "sunny",
-            "entity": "weather"
-          },
-          {
-            "start": 17,
-            "end": 23,
-            "value": "friday",
+            "start": 8,
+            "end": 15,
+            "value": "today's",
             "entity": "time"
           }
         ],
-        "text": "Will it be sunny friday"
+        "text": "What is today's weather"
       },
       {
         "intent": "get_weather",
         "entities": [
           {
-            "start": 11,
-            "end": 17,
-            "value": "cloudy",
-            "entity": "weather"
-          },
-          {
-            "start": 18,
-            "end": 24,
-            "value": "monday",
+            "start": 8,
+            "end": 18,
+            "value": "tomorrow's",
             "entity": "time"
           }
         ],
-        "text": "Will it be cloudy monday"
-      },
-      {
-        "intent": "get_weather",
-        "entities": [
-          {
-            "start": 11,
-            "end": 16,
-            "value": "rainy",
-            "entity": "weather"
-          },
-          {
-            "start": 17,
-            "end": 24,
-            "value": "tuesday",
-            "entity": "time"
-          }
-        ],
-        "text": "Will it be rainy tuesday"
-      },
-      {
-        "intent": "get_weather",
-        "entities": [
-          {
-            "start": 36,
-            "end": 44,
-            "value": "tomorrow",
-            "entity": "time"
-          }
-        ],
-        "text": "What's the weather going to be like tomorrow"
-      },
-      {
-        "intent": "get_weather",
-        "entities": [
-          {
-            "start": 36,
-            "end": 44,
-            "value": "thursday",
-            "entity": "time"
-          }
-        ],
-        "text": "What's the weather going to be like thursday"
-      },
-      {
-        "intent": "get_weather",
-        "entities": [
-          {
-            "start": 22,
-            "end": 35,
-            "value": "San Francisco",
-            "entity": "location"
-          }
-        ],
-        "text": "What's the weather in San Francisco"
-      },
-      {
-        "intent": "get_weather",
-        "entities": [
-          {
-            "start": 6,
-            "end": 13,
-            "value": "raining",
-            "entity": "weather"
-          }
-        ],
-        "text": "Is it raining"
-      },
-      {
-        "intent": "get_weather",
-        "entities": [
-          {
-            "start": 15,
-            "end": 26,
-            "value": "Los Angeles",
-            "entity": "location"
-          }
-        ],
-        "text": "Is it sunny in Los Angeles"
+        "text": "What is tomorrow's weather"
       },
       {
         "intent": "get_weather",
@@ -484,18 +680,6 @@
           }
         ],
         "text": "What will the weather be on friday"
-      },
-      {
-        "intent": "get_weather",
-        "entities": [
-          {
-            "start": 8,
-            "end": 18,
-            "value": "New York's",
-            "entity": "location"
-          }
-        ],
-        "text": "What is New York's weather"
       },
       {
         "intent": "get_weather",
@@ -514,6 +698,18 @@
           }
         ],
         "text": "What's Miami's weather sunday"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "current",
+            "entity": "time"
+          }
+        ],
+        "text": "What's the current weather"
       },
       {
         "intent": "get_weather",
@@ -538,30 +734,76 @@
         "entities": [
           {
             "start": 19,
+            "end": 24,
+            "value": "today",
+            "entity": "time"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "98119",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather today in zipcode 98119"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 19,
             "end": 27,
             "value": "tomorrow",
             "entity": "time"
           },
           {
             "start": 39,
-            "end": 44,
-            "value": "98119",
+            "end": 45,
+            "value": "946112",
             "entity": "location"
           }
         ],
-        "text": "What's the weather tomorrow in zipcode 98119"
+        "text": "What's the weather tomorrow in zipcode 946112"
       },
       {
         "intent": "get_weather",
         "entities": [
           {
-            "start": 24,
-            "end": 29,
-            "value": "94608",
+            "start": 36,
+            "end": 44,
+            "value": "thursday",
+            "entity": "time"
+          }
+        ],
+        "text": "What's the weather going to be like thursday"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 36,
+            "end": 44,
+            "value": "tomorrow",
+            "entity": "time"
+          }
+        ],
+        "text": "What's the weather going to be like tomorrow"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 35,
+            "value": "San Francisco",
             "entity": "location"
           }
         ],
-        "text": "Is it cloudy in zipcode 94608"
+        "text": "What's the weather in San Francisco"
+      },
+      {
+        "intent": "get_weather",
+        "text": "What's the weather like?"
       },
       {
         "intent": "get_weather",
@@ -573,7 +815,171 @@
             "entity": "location"
           }
         ],
-        "text": "What's the weather like in areacode 94806"
+        "text": "What's the weather like in areacode 94806?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "98107",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather like in areacode 98107?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "98115",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather like in areacode 98115?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "97217",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather like in areacode 97217?"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "cloudy",
+            "entity": "weather"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "value": "monday",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be cloudy monday"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "cloudy",
+            "entity": "weather"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "value": "today",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be cloudy today"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "rainy",
+            "entity": "weather"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "value": "today",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be rainy today"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "rainy",
+            "entity": "weather"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "value": "tuesday",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be rainy tuesday"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "sunny",
+            "entity": "weather"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "value": "friday",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be sunny friday"
+      },
+      {
+        "intent": "get_weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "sunny",
+            "entity": "weather"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "value": "today",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be sunny today"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "Do I need a jacket?"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "How cold is it?"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 11,
+            "end": 24,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ],
+        "text": "How hot is San Francisco?"
       },
       {
         "intent": "get_temperature",
@@ -581,71 +987,47 @@
           {
             "start": 11,
             "end": 18,
-            "value": "current",
-            "entity": "time"
+            "value": "Seattle",
+            "entity": "location"
           }
         ],
-        "text": "What's the current temperature"
+        "text": "How hot is Seattle?"
       },
       {
         "intent": "get_temperature",
         "entities": [
           {
-            "start": 23,
-            "end": 30,
-            "value": "tonight",
-            "entity": "time"
+            "start": 11,
+            "end": 17,
+            "value": "Tacoma",
+            "entity": "location"
           }
         ],
-        "text": "What's the temperature tonight"
-      },
-      {
-        "intent": "get_temperature",
-        "text": "What is the temperature"
-      },
-      {
-        "intent": "get_temperature",
-        "text": "Do I need a jacket"
-      },
-      {
-        "intent": "get_temperature",
-        "text": "Is it cold outside"
+        "text": "How hot is Tacoma?"
       },
       {
         "intent": "get_temperature",
         "entities": [
           {
-            "start": 16,
-            "end": 23,
-            "value": "tonight",
-            "entity": "time"
-          }
-        ],
-        "text": "Will it be cold tonight"
-      },
-      {
-        "intent": "get_temperature",
-        "entities": [
-          {
-            "start": 15,
-            "end": 22,
-            "value": "tonight",
-            "entity": "time"
-          }
-        ],
-        "text": "Will it be hot tonight"
-      },
-      {
-        "intent": "get_temperature",
-        "entities": [
-          {
-            "start": 8,
+            "start": 11,
             "end": 18,
-            "value": "tomorrow's",
-            "entity": "time"
+            "value": "Atlanta",
+            "entity": "location"
           }
         ],
-        "text": "What is tomorrow's temperature"
+        "text": "How hot is Atlanta?"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "How warm is it?"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "Is it cold outside?"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "Is it warm outside?"
       },
       {
         "intent": "get_temperature",
@@ -657,7 +1039,47 @@
             "entity": "time"
           }
         ],
-        "text": "What is friday's temperature"
+        "text": "What is friday's temperature?"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "monday's",
+            "entity": "time"
+          }
+        ],
+        "text": "What is monday's temperature?"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "tuesday's",
+            "entity": "time"
+          }
+        ],
+        "text": "What is tuesday's temperature?"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "sunday's",
+            "entity": "time"
+          }
+        ],
+        "text": "What is sunday's temperature?"
+      },
+      {
+        "intent": "get_temperature",
+        "text": "What is the temperature?"
       },
       {
         "intent": "get_temperature",
@@ -669,7 +1091,7 @@
             "entity": "time"
           }
         ],
-        "text": "What is the temperature on saturday"
+        "text": "What is the temperature on saturday?"
       },
       {
         "intent": "get_temperature",
@@ -687,19 +1109,67 @@
             "entity": "location"
           }
         ],
-        "text": "What is the temperature on saturday in Houston"
+        "text": "What is the temperature on saturday in Houston?"
       },
       {
         "intent": "get_temperature",
-        "text": "Is it warm outside"
+        "entities": [
+          {
+            "start": 27,
+            "end": 33,
+            "value": "sunday",
+            "entity": "time"
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "value": "Dallas",
+            "entity": "location"
+          }
+        ],
+        "text": "What is the temperature on sunday in Dallas?"
       },
       {
         "intent": "get_temperature",
-        "text": "How cold is it"
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "value": "thursday",
+            "entity": "time"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "Miami",
+            "entity": "location"
+          }
+        ],
+        "text": "What is the temperature on thursday in Miami?"
       },
       {
         "intent": "get_temperature",
-        "text": "How warm is it"
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "current",
+            "entity": "time"
+          }
+        ],
+        "text": "What's the current temperature?"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "tonight",
+            "entity": "time"
+          }
+        ],
+        "text": "What's the temperature tonight?"
       },
       {
         "intent": "get_temperature",
@@ -711,19 +1181,31 @@
             "entity": "location"
           }
         ],
-        "text": "What's the temperature in Bellevue"
+        "text": "What's the temperature in Bellevue?"
       },
       {
         "intent": "get_temperature",
         "entities": [
           {
-            "start": 11,
-            "end": 24,
-            "value": "San Francisco",
+            "start": 26,
+            "end": 34,
+            "value": "Berkeley",
             "entity": "location"
           }
         ],
-        "text": "How hot is San Francisco"
+        "text": "What's the temperature in Berkeley?"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": "Austin",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the temperature in Austin?"
       },
       {
         "intent": "get_temperature",
@@ -735,11 +1217,55 @@
             "entity": "location"
           }
         ],
-        "text": "Whats the current temperature in 98109"
+        "text": "Whats the current temperature in 98109?"
       },
       {
-        "intent": "get_status",
-        "text": "How are you?"
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "98199",
+            "entity": "location"
+          }
+        ],
+        "text": "Whats the current temperature in 98199?"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "94608",
+            "entity": "location"
+          }
+        ],
+        "text": "Whats the current temperature in 94608?"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "tonight",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be cold tonight?"
+      },
+      {
+        "intent": "get_temperature",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "tonight",
+            "entity": "time"
+          }
+        ],
+        "text": "Will it be hot tonight?"
       },
       {
         "intent": "get_status",
@@ -751,6 +1277,10 @@
       },
       {
         "intent": "get_status",
+        "text": "How are you?"
+      },
+      {
+        "intent": "get_status",
         "text": "How's it going?"
       },
       {
@@ -759,23 +1289,11 @@
       },
       {
         "intent": "get_status",
-        "text": "You doing ok?"
-      },
-      {
-        "intent": "get_status",
         "text": "You doing alright?"
       },
       {
-        "intent": "get_music",
-        "entities": [
-          {
-            "start": 0,
-            "end": 4,
-            "value": "play",
-            "entity": "action"
-          }
-        ],
-        "text": "play music"
+        "intent": "get_status",
+        "text": "You doing ok?"
       },
       {
         "intent": "get_music",
@@ -783,11 +1301,11 @@
           {
             "start": 0,
             "end": 4,
-            "value": "play",
+            "value": "Play",
             "entity": "action"
           }
         ],
-        "text": "play [Despacito][title]"
+        "text": "Play music"
       },
       {
         "intent": "get_music",
@@ -795,11 +1313,11 @@
           {
             "start": 0,
             "end": 4,
-            "value": "play",
+            "value": "Play",
             "entity": "action"
           }
         ],
-        "text": "play [Beyonce][artist]"
+        "text": "Play Spotify"
       },
       {
         "intent": "get_music",
@@ -807,23 +1325,143 @@
           {
             "start": 0,
             "end": 4,
-            "value": "play",
+            "value": "Play",
+            "entity": "action"
+          }
+        ],
+        "text": "Play [Despacito][title]"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          }
+        ],
+        "text": "Play [Lovely][title]"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          }
+        ],
+        "text": "Play [Get You][title]"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          }
+        ],
+        "text": "Play [We Find Love][title]"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          }
+        ],
+        "text": "Play [Freudian][title]"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          }
+        ],
+        "text": "Play [Beyonce][artist]"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          }
+        ],
+        "text": "Play [Daniel Caesar][artist]"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          }
+        ],
+        "text": "Play [Frank Ocean][artist]"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          }
+        ],
+        "text": "Play [Khalid][artist]"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          }
+        ],
+        "text": "Play [John Legend][artist]"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
             "entity": "action"
           },
           {
             "start": 5,
             "end": 10,
-            "value": "trust",
+            "value": "Trust",
             "entity": "title"
           },
           {
             "start": 14,
             "end": 26,
-            "value": "brent faiyaz",
+            "value": "Brent Faiyaz",
             "entity": "artist"
           }
         ],
-        "text": "play trust by brent faiyaz"
+        "text": "Play Trust by Brent Faiyaz"
       },
       {
         "intent": "get_music",
@@ -831,17 +1469,113 @@
           {
             "start": 0,
             "end": 4,
-            "value": "play",
+            "value": "Play",
+            "entity": "action"
+          },
+          {
+            "start": 5,
+            "end": 8,
+            "value": "Oui",
+            "entity": "title"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "value": "Jeremih",
+            "entity": "artist"
+          }
+        ],
+        "text": "Play Oui by Jeremih"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          },
+          {
+            "start": 5,
+            "end": 11,
+            "value": "Dreamz",
+            "entity": "title"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "value": "J. Cole",
+            "entity": "artist"
+          }
+        ],
+        "text": "Play Dreamz by J. Cole"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          },
+          {
+            "start": 5,
+            "end": 15,
+            "value": "Sure Thing",
+            "entity": "title"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "value": "Miguel",
+            "entity": "artist"
+          }
+        ],
+        "text": "Play Sure Thing by Miguel"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          },
+          {
+            "start": 5,
+            "end": 11,
+            "value": "Humble",
+            "entity": "title"
+          },
+          {
+            "start": 15,
+            "end": 29,
+            "value": "Kendrick Lamar",
+            "entity": "artist"
+          }
+        ],
+        "text": "Play Humble by Kendrick Lamar"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
             "entity": "action"
           },
           {
             "start": 14,
             "end": 29,
-            "value": "slowing it down",
+            "value": "Slowing it Down",
             "entity": "playlist"
           }
         ],
-        "text": "play playlist slowing it down"
+        "text": "Play playlist Slowing it Down"
       },
       {
         "intent": "get_music",
@@ -849,7 +1583,61 @@
           {
             "start": 0,
             "end": 4,
-            "value": "play",
+            "value": "Play",
+            "entity": "action"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "value": "For Bae",
+            "entity": "playlist"
+          }
+        ],
+        "text": "Play playlist For Bae"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "value": "Oldies",
+            "entity": "playlist"
+          }
+        ],
+        "text": "Play playlist Oldies"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          },
+          {
+            "start": 14,
+            "end": 22,
+            "value": "Sobriety",
+            "entity": "playlist"
+          }
+        ],
+        "text": "Play playlist Sobriety"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
             "entity": "action"
           },
           {
@@ -859,7 +1647,61 @@
             "entity": "type"
           }
         ],
-        "text": "play a random song"
+        "text": "Play a random song"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "rap",
+            "entity": "type"
+          }
+        ],
+        "text": "Play a rap song"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "pop",
+            "entity": "type"
+          }
+        ],
+        "text": "Play a pop song"
+      },
+      {
+        "intent": "get_music",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Play",
+            "entity": "action"
+          },
+          {
+            "start": 7,
+            "end": 14,
+            "value": "country",
+            "entity": "type"
+          }
+        ],
+        "text": "Play a country song"
       },
       {
         "intent": "get_music",
@@ -871,11 +1713,11 @@
             "entity": "type"
           }
         ],
-        "text": "lets turn up"
+        "text": "Lets turn up"
       },
       {
         "intent": "get_music",
-        "text": "i need music"
+        "text": "I need music"
       },
       {
         "intent": "get_music",
@@ -887,7 +1729,7 @@
             "entity": "type"
           }
         ],
-        "text": "i need concentration music"
+        "text": "I need concentration music"
       },
       {
         "intent": "get_music",
@@ -899,11 +1741,11 @@
             "entity": "type"
           }
         ],
-        "text": "we need party music"
+        "text": "We need party music"
       },
       {
         "intent": "get_music",
-        "text": "put on some music"
+        "text": "Put on some music"
       },
       {
         "intent": "get_music",
@@ -915,7 +1757,7 @@
             "entity": "type"
           }
         ],
-        "text": "put on some jazz"
+        "text": "Put on some jazz"
       },
       {
         "intent": "get_music",
@@ -923,11 +1765,11 @@
           {
             "start": 0,
             "end": 5,
-            "value": "pause",
+            "value": "Pause",
             "entity": "action"
           }
         ],
-        "text": "pause the music"
+        "text": "Pause the music"
       },
       {
         "intent": "get_music",
@@ -935,11 +1777,11 @@
           {
             "start": 0,
             "end": 5,
-            "value": "pause",
+            "value": "Pause",
             "entity": "action"
           }
         ],
-        "text": "pause music"
+        "text": "Pause music"
       },
       {
         "intent": "get_music",
@@ -947,11 +1789,11 @@
           {
             "start": 0,
             "end": 4,
-            "value": "next",
+            "value": "Next",
             "entity": "action"
           }
         ],
-        "text": "next song"
+        "text": "Next song"
       },
       {
         "intent": "get_music",
@@ -959,7 +1801,7 @@
           {
             "start": 0,
             "end": 4,
-            "value": "play",
+            "value": "Play",
             "entity": "action"
           },
           {
@@ -969,7 +1811,7 @@
             "entity": "action"
           }
         ],
-        "text": "play next song"
+        "text": "Play next song"
       },
       {
         "intent": "get_music",
@@ -977,11 +1819,11 @@
           {
             "start": 0,
             "end": 8,
-            "value": "previous",
+            "value": "Previous",
             "entity": "action"
           }
         ],
-        "text": "previous song"
+        "text": "Previous song"
       },
       {
         "intent": "get_music",
@@ -989,7 +1831,7 @@
           {
             "start": 0,
             "end": 4,
-            "value": "play",
+            "value": "Play",
             "entity": "action"
           },
           {
@@ -999,19 +1841,7 @@
             "entity": "action"
           }
         ],
-        "text": "play previous song"
-      },
-      {
-        "intent": "get_datetime",
-        "entities": [
-          {
-            "start": 5,
-            "end": 9,
-            "value": "date",
-            "entity": "tempus"
-          }
-        ],
-        "text": "What date is it?"
+        "text": "Play previous song"
       },
       {
         "intent": "get_datetime",
@@ -1031,6 +1861,18 @@
           {
             "start": 20,
             "end": 24,
+            "value": "time",
+            "entity": "tempus"
+          }
+        ],
+        "text": "Can you give me the time?"
+      },
+      {
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
             "value": "date",
             "entity": "tempus"
           }
@@ -1041,37 +1883,25 @@
         "intent": "get_datetime",
         "entities": [
           {
-            "start": 12,
-            "end": 16,
-            "value": "date",
+            "start": 20,
+            "end": 24,
+            "value": "time",
             "entity": "tempus"
           }
         ],
-        "text": "What is the date?"
+        "text": "Can you tell me the time?"
       },
       {
         "intent": "get_datetime",
         "entities": [
           {
-            "start": 19,
-            "end": 23,
+            "start": 5,
+            "end": 9,
             "value": "date",
             "entity": "tempus"
           }
         ],
-        "text": "What's the current date?"
-      },
-      {
-        "intent": "get_datetime",
-        "entities": [
-          {
-            "start": 11,
-            "end": 15,
-            "value": "date",
-            "entity": "tempus"
-          }
-        ],
-        "text": "what's the date?"
+        "text": "What date is it?"
       },
       {
         "intent": "get_datetime",
@@ -1089,25 +1919,13 @@
         "intent": "get_datetime",
         "entities": [
           {
-            "start": 20,
-            "end": 24,
-            "value": "time",
+            "start": 12,
+            "end": 16,
+            "value": "date",
             "entity": "tempus"
           }
         ],
-        "text": "Can you give me the time?"
-      },
-      {
-        "intent": "get_datetime",
-        "entities": [
-          {
-            "start": 20,
-            "end": 24,
-            "value": "time",
-            "entity": "tempus"
-          }
-        ],
-        "text": "Can you tell me the time?"
+        "text": "What is the date?"
       },
       {
         "intent": "get_datetime",
@@ -1127,11 +1945,35 @@
           {
             "start": 19,
             "end": 23,
+            "value": "date",
+            "entity": "tempus"
+          }
+        ],
+        "text": "What's the current date?"
+      },
+      {
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
             "value": "time",
             "entity": "tempus"
           }
         ],
         "text": "What's the current time?"
+      },
+      {
+        "intent": "get_datetime",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "date",
+            "entity": "tempus"
+          }
+        ],
+        "text": "what's the date?"
       },
       {
         "intent": "get_datetime",
@@ -1149,253 +1991,13 @@
         "intent": "run_program",
         "entities": [
           {
-            "start": 5,
-            "end": 14,
-            "value": "Publisher",
-            "entity": "program"
-          }
-        ],
-        "text": "open Publisher"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 7,
-            "end": 13,
-            "value": "chrome",
-            "entity": "program"
-          }
-        ],
-        "text": "launch chrome"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
             "start": 15,
-            "end": 29,
-            "value": "Github Desktop",
-            "entity": "program"
-          }
-        ],
-        "text": "launch program Github Desktop"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 13,
-            "end": 25,
-            "value": "OneNote 2016",
-            "entity": "program"
-          }
-        ],
-        "text": "will you run OneNote 2016"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 7,
-            "end": 16,
-            "value": "Side Sync",
-            "entity": "program"
-          }
-        ],
-        "text": "launch Side Sync"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 5,
-            "end": 12,
-            "value": "Firefox",
-            "entity": "program"
-          }
-        ],
-        "text": "open Firefox"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 4,
-            "end": 11,
-            "value": "OneNote",
-            "entity": "program"
-          }
-        ],
-        "text": "run OneNote"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 5,
-            "end": 13,
-            "value": "settings",
-            "entity": "program"
-          }
-        ],
-        "text": "open settings"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 5,
-            "end": 22,
-            "value": "Adobe Illustrator",
-            "entity": "program"
-          }
-        ],
-        "text": "open Adobe Illustrator"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 5,
-            "end": 15,
-            "value": "PowerPoint",
-            "entity": "program"
-          }
-        ],
-        "text": "open PowerPoint"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 5,
-            "end": 12,
-            "value": "spotify",
-            "entity": "program"
-          }
-        ],
-        "text": "open spotify"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 4,
-            "end": 16,
-            "value": "NetBeans IDE",
-            "entity": "program"
-          }
-        ],
-        "text": "run NetBeans IDE"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 5,
-            "end": 23,
-            "value": "Visual Studio Code",
-            "entity": "program"
-          }
-        ],
-        "text": "open Visual Studio Code"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 7,
-            "end": 15,
-            "value": "Audacity",
-            "entity": "program"
-          }
-        ],
-        "text": "launch Audacity"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 5,
             "end": 21,
-            "value": "VLC media player",
+            "value": "Access",
             "entity": "program"
           }
         ],
-        "text": "open VLC media player"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 4,
-            "end": 12,
-            "value": "Audacity",
-            "entity": "program"
-          }
-        ],
-        "text": "run Audacity"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 4,
-            "end": 14,
-            "value": "BlueStacks",
-            "entity": "program"
-          }
-        ],
-        "text": "run BlueStacks"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 4,
-            "end": 8,
-            "value": "Word",
-            "entity": "program"
-          }
-        ],
-        "text": "run Word"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 5,
-            "end": 14,
-            "value": "Publisher",
-            "entity": "program"
-          }
-        ],
-        "text": "open Publisher"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 4,
-            "end": 17,
-            "value": "Google Chrome",
-            "entity": "program"
-          }
-        ],
-        "text": "run Google Chrome"
-      },
-      {
-        "intent": "run_program",
-        "entities": [
-          {
-            "start": 14,
-            "end": 32,
-            "value": "Visual Studio Code",
-            "entity": "program"
-          }
-        ],
-        "text": "will you open Visual Studio Code"
+        "text": "Can you launch Access?"
       },
       {
         "intent": "run_program",
@@ -1407,31 +2009,31 @@
             "entity": "program"
           }
         ],
-        "text": "can you launch Excel"
+        "text": "Can you launch Excel?"
       },
       {
         "intent": "run_program",
         "entities": [
           {
-            "start": 7,
-            "end": 15,
-            "value": "SideSync",
+            "start": 15,
+            "end": 28,
+            "value": "Google Chrome",
             "entity": "program"
           }
         ],
-        "text": "launch SideSync"
+        "text": "Can you launch Google Chrome?"
       },
       {
         "intent": "run_program",
         "entities": [
           {
-            "start": 7,
-            "end": 15,
-            "value": "OneDrive",
+            "start": 15,
+            "end": 33,
+            "value": "Skype for Business",
             "entity": "program"
           }
         ],
-        "text": "launch OneDrive"
+        "text": "Can you launch Skype for Business?"
       },
       {
         "intent": "run_program",
@@ -1443,139 +2045,367 @@
             "entity": "program"
           }
         ],
-        "text": "can you open Outlook"
+        "text": "Can you open Outlook?"
       },
       {
-        "intent": "get_dictionary",
+        "intent": "run_program",
         "entities": [
           {
-            "start": 23,
+            "start": 13,
+            "end": 33,
+            "value": "Windows Media Player",
+            "entity": "program"
+          }
+        ],
+        "text": "Can you open Windows Media Player?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 13,
             "end": 29,
-            "value": "carrot",
-            "entity": "key"
+            "value": "Jupyter Notebook",
+            "entity": "program"
           }
         ],
-        "text": "Definition of the word carrot"
+        "text": "Can you open Jupyter Notebook?"
       },
       {
-        "intent": "get_dictionary",
+        "intent": "run_program",
         "entities": [
           {
-            "start": 23,
+            "start": 13,
             "end": 31,
-            "value": "tomorrow",
-            "entity": "key"
+            "value": "Anaconda Navigator",
+            "entity": "program"
           }
         ],
-        "text": "Definition of the word tomorrow"
+        "text": "Can you open Anaconda Navigator?"
       },
       {
-        "intent": "get_dictionary",
-        "entities": [
-          {
-            "start": 23,
-            "end": 31,
-            "value": "describe",
-            "entity": "key"
-          }
-        ],
-        "text": "Definition of the word describe"
-      },
-      {
-        "intent": "get_dictionary",
-        "entities": [
-          {
-            "start": 23,
-            "end": 28,
-            "value": "plant",
-            "entity": "key"
-          }
-        ],
-        "text": "Definition of the word plant"
-      },
-      {
-        "intent": "get_dictionary",
-        "entities": [
-          {
-            "start": 23,
-            "end": 35,
-            "value": "unpublicized",
-            "entity": "key"
-          }
-        ],
-        "text": "Definition of the word unpublicized"
-      },
-      {
-        "intent": "get_dictionary",
-        "entities": [
-          {
-            "start": 7,
-            "end": 12,
-            "value": "trust",
-            "entity": "key"
-          }
-        ],
-        "text": "Define trust"
-      },
-      {
-        "intent": "get_dictionary",
-        "entities": [
-          {
-            "start": 7,
-            "end": 13,
-            "value": "quartz",
-            "entity": "key"
-          }
-        ],
-        "text": "Define quartz"
-      },
-      {
-        "intent": "get_dictionary",
-        "entities": [
-          {
-            "start": 7,
-            "end": 13,
-            "value": "nozzle",
-            "entity": "key"
-          }
-        ],
-        "text": "Define nozzle"
-      },
-      {
-        "intent": "get_dictionary",
+        "intent": "run_program",
         "entities": [
           {
             "start": 7,
             "end": 15,
-            "value": "vocalize",
-            "entity": "key"
+            "value": "Audacity",
+            "entity": "program"
           }
         ],
-        "text": "Define vocalize"
+        "text": "Launch Audacity?"
       },
       {
-        "intent": "get_dictionary",
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "onedrive",
+            "entity": "program"
+          }
+        ],
+        "text": "Launch onedrive?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "Side Sync",
+            "entity": "program"
+          }
+        ],
+        "text": "Launch Side Sync?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "SideSync",
+            "entity": "program"
+          }
+        ],
+        "text": "Launch SideSync?"
+      },
+      {
+        "intent": "run_program",
         "entities": [
           {
             "start": 7,
             "end": 13,
-            "value": "jumper",
-            "entity": "key"
+            "value": "Chrome",
+            "entity": "program"
           }
         ],
-        "text": "Define jumper"
+        "text": "Launch Chrome?"
       },
       {
-        "intent": "get_dictionary",
+        "intent": "run_program",
         "entities": [
           {
-            "start": 7,
-            "end": 10,
-            "value": "red",
-            "entity": "key"
+            "start": 15,
+            "end": 29,
+            "value": "Github Desktop",
+            "entity": "program"
           }
         ],
-        "text": "Define red"
+        "text": "Launch program Github Desktop?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 22,
+            "value": "Adobe Illustrator",
+            "entity": "program"
+          }
+        ],
+        "text": "Open Adobe Illustrator?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Firefox",
+            "entity": "program"
+          }
+        ],
+        "text": "Open Firefox?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "PowerPoint",
+            "entity": "program"
+          }
+        ],
+        "text": "Open PowerPoint?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "Publisher",
+            "entity": "program"
+          }
+        ],
+        "text": "Open Publisher?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "Publisher",
+            "entity": "program"
+          }
+        ],
+        "text": "Open Publisher?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 21,
+            "value": "VLC media player",
+            "entity": "program"
+          }
+        ],
+        "text": "Open VLC media player?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 23,
+            "value": "Visual Studio Code",
+            "entity": "program"
+          }
+        ],
+        "text": "Open Visual Studio Code?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "settings",
+            "entity": "program"
+          }
+        ],
+        "text": "Open settings?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Spotify",
+            "entity": "program"
+          }
+        ],
+        "text": "Open Spotify?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "Audacity",
+            "entity": "program"
+          }
+        ],
+        "text": "Run Audacity?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 14,
+            "value": "BlueStacks",
+            "entity": "program"
+          }
+        ],
+        "text": "Run BlueStacks?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 17,
+            "value": "Google Chrome",
+            "entity": "program"
+          }
+        ],
+        "text": "Run Google Chrome?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 16,
+            "value": "Netbeans IDE",
+            "entity": "program"
+          }
+        ],
+        "text": "Run Netbeans IDE?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "OneNote",
+            "entity": "program"
+          }
+        ],
+        "text": "Run OneNote?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "Word",
+            "entity": "program"
+          }
+        ],
+        "text": "Run Word?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 14,
+            "end": 32,
+            "value": "Visual Studio Code",
+            "entity": "program"
+          }
+        ],
+        "text": "Will you open Visual Studio Code?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "CCleaner",
+            "entity": "program"
+          }
+        ],
+        "text": "Will you open CCleaner?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "Node.js",
+            "entity": "program"
+          }
+        ],
+        "text": "Will you open Node.js?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 13,
+            "end": 25,
+            "value": "OneNote 2016",
+            "entity": "program"
+          }
+        ],
+        "text": "Will you run OneNote 2016?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 13,
+            "end": 25,
+            "value": "Task Manager",
+            "entity": "program"
+          }
+        ],
+        "text": "Will you run Task Manager?"
+      },
+      {
+        "intent": "run_program",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "Slack",
+            "entity": "program"
+          }
+        ],
+        "text": "Will you run Slack?"
       },
       {
         "intent": "get_dictionary",
@@ -1587,7 +2417,7 @@
             "entity": "key"
           }
         ],
-        "text": "Define jeopardizing"
+        "text": "Define jeopardizing."
       },
       {
         "intent": "get_dictionary",
@@ -1599,7 +2429,31 @@
             "entity": "key"
           }
         ],
-        "text": "Define jockey"
+        "text": "Define jockey."
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "jumper",
+            "entity": "key"
+          }
+        ],
+        "text": "Define jumper."
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "nozzle",
+            "entity": "key"
+          }
+        ],
+        "text": "Define nozzle."
       },
       {
         "intent": "get_dictionary",
@@ -1611,31 +2465,55 @@
             "entity": "key"
           }
         ],
-        "text": "Define puzzles"
+        "text": "Define puzzles."
       },
       {
         "intent": "get_dictionary",
         "entities": [
           {
-            "start": 16,
-            "end": 20,
-            "value": "sand",
+            "start": 7,
+            "end": 13,
+            "value": "quartz",
             "entity": "key"
           }
         ],
-        "text": "Define the word sand"
+        "text": "Define quartz."
       },
       {
         "intent": "get_dictionary",
         "entities": [
           {
-            "start": 16,
-            "end": 20,
-            "value": "jazz",
+            "start": 7,
+            "end": 10,
+            "value": "red",
             "entity": "key"
           }
         ],
-        "text": "Define the word jazz"
+        "text": "Define red."
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "trust",
+            "entity": "key"
+          }
+        ],
+        "text": "Define trust."
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "vocalize",
+            "entity": "key"
+          }
+        ],
+        "text": "Define vocalize."
       },
       {
         "intent": "get_dictionary",
@@ -1647,67 +2525,127 @@
             "entity": "key"
           }
         ],
-        "text": "Define the word immunize"
+        "text": "Define the word immunize."
       },
       {
         "intent": "get_dictionary",
         "entities": [
           {
-            "start": 31,
-            "end": 35,
-            "value": "buzz",
+            "start": 16,
+            "end": 20,
+            "value": "jazz",
             "entity": "key"
           }
         ],
-        "text": "What's the meaning of the word buzz"
+        "text": "Define the word jazz."
       },
       {
         "intent": "get_dictionary",
         "entities": [
           {
-            "start": 31,
-            "end": 39,
-            "value": "quickest",
+            "start": 16,
+            "end": 20,
+            "value": "sand",
             "entity": "key"
           }
         ],
-        "text": "What's the meaning of the word quickest"
+        "text": "Define the word sand."
       },
       {
         "intent": "get_dictionary",
         "entities": [
           {
-            "start": 31,
-            "end": 43,
-            "value": "subjectively",
+            "start": 16,
+            "end": 26,
+            "value": "aberration",
             "entity": "key"
           }
         ],
-        "text": "What's the meaning of the word subjectively"
+        "text": "Define the word aberration."
       },
       {
         "intent": "get_dictionary",
         "entities": [
           {
-            "start": 31,
-            "end": 36,
-            "value": "smart",
+            "start": 16,
+            "end": 22,
+            "value": "brazen",
             "entity": "key"
           }
         ],
-        "text": "What's the meaning of the word smart"
+        "text": "Define the word brazen."
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 16,
+            "end": 27,
+            "value": "clandestine",
+            "entity": "key"
+          }
+        ],
+        "text": "Define the word clandestine."
       },
       {
         "intent": "get_dictionary",
         "entities": [
           {
             "start": 23,
-            "end": 30,
-            "value": "machine",
+            "end": 29,
+            "value": "carrot",
             "entity": "key"
           }
         ],
-        "text": "What is the meaning of machine"
+        "text": "Definition of the word carrot."
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "describe",
+            "entity": "key"
+          }
+        ],
+        "text": "Definition of the word describe."
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "plant",
+            "entity": "key"
+          }
+        ],
+        "text": "Definition of the word plant."
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "tomorrow",
+            "entity": "key"
+          }
+        ],
+        "text": "Definition of the word tomorrow."
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "unpublicized",
+            "entity": "key"
+          }
+        ],
+        "text": "Definition of the word unpublicized."
       },
       {
         "intent": "get_dictionary",
@@ -1719,7 +2657,55 @@
             "entity": "key"
           }
         ],
-        "text": "What is the meaning of jobs"
+        "text": "What is the meaning of jobs?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "machine",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of machine?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "connive",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of connive?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "extol",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of extol?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 23,
+            "end": 36,
+            "value": "flabbergasted",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of flabbergasted?"
       },
       {
         "intent": "get_dictionary",
@@ -1731,151 +2717,103 @@
             "entity": "key"
           }
         ],
-        "text": "What is the meaning of the word minimize"
+        "text": "What is the meaning of the word minimize?"
       },
       {
-        "intent": "get_thesaurus",
+        "intent": "get_dictionary",
         "entities": [
           {
-            "start": 11,
-            "end": 18,
-            "value": "antonym",
-            "entity": "type"
-          },
-          {
-            "start": 22,
-            "end": 26,
-            "value": "down",
-            "entity": "key"
-          }
-        ],
-        "text": "What's the antonym of down"
-      },
-      {
-        "intent": "get_thesaurus",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "Antonym",
-            "entity": "type"
-          },
-          {
-            "start": 12,
-            "end": 21,
-            "value": "misinform",
-            "entity": "key"
-          }
-        ],
-        "text": "Antonym for misinform"
-      },
-      {
-        "intent": "get_thesaurus",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "Antonyms",
-            "entity": "type"
-          },
-          {
-            "start": 13,
-            "end": 16,
-            "value": "lie",
-            "entity": "key"
-          }
-        ],
-        "text": "Antonyms for lie"
-      },
-      {
-        "intent": "get_thesaurus",
-        "entities": [
-          {
-            "start": 11,
-            "end": 19,
-            "value": "opposite",
-            "entity": "type"
-          },
-          {
-            "start": 23,
-            "end": 28,
-            "value": "happy",
-            "entity": "key"
-          }
-        ],
-        "text": "What's the opposite of happy"
-      },
-      {
-        "intent": "get_thesaurus",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "Antonym",
-            "entity": "type"
-          },
-          {
-            "start": 11,
-            "end": 17,
-            "value": "orange",
-            "entity": "key"
-          }
-        ],
-        "text": "Antonym of orange"
-      },
-      {
-        "intent": "get_thesaurus",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "Antonyms",
-            "entity": "type"
-          },
-          {
-            "start": 21,
-            "end": 27,
-            "value": "expert",
-            "entity": "key"
-          }
-        ],
-        "text": "Antonyms of the word expert"
-      },
-      {
-        "intent": "get_thesaurus",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "Antonym",
-            "entity": "type"
-          },
-          {
-            "start": 20,
-            "end": 32,
-            "value": "tranquilizer",
-            "entity": "key"
-          }
-        ],
-        "text": "Antonym of the word tranquilizer"
-      },
-      {
-        "intent": "get_thesaurus",
-        "entities": [
-          {
-            "start": 12,
-            "end": 20,
-            "value": "antonyms",
-            "entity": "type"
-          },
-          {
-            "start": 33,
+            "start": 32,
             "end": 42,
-            "value": "expansion",
+            "value": "gratuitous",
             "entity": "key"
           }
         ],
-        "text": "What is the antonyms of the word expansion"
+        "text": "What is the meaning of the word gratuitous?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 32,
+            "end": 38,
+            "value": "infamy",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of the word infamy?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 32,
+            "end": 42,
+            "value": "inveterate",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of the word inveterate?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 32,
+            "end": 39,
+            "value": "bravado",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the meaning of the word bravado?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 31,
+            "end": 35,
+            "value": "buzz",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the meaning of the word buzz?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "value": "quickest",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the meaning of the word quickest?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "smart",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the meaning of the word smart?"
+      },
+      {
+        "intent": "get_dictionary",
+        "entities": [
+          {
+            "start": 31,
+            "end": 43,
+            "value": "subjectively",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the meaning of the word subjectively?"
       },
       {
         "intent": "get_thesaurus",
@@ -1893,7 +2831,7 @@
             "entity": "key"
           }
         ],
-        "text": "What is the antonym of the word bear"
+        "text": "What is the antonym of the word bear?"
       },
       {
         "intent": "get_thesaurus",
@@ -1905,13 +2843,49 @@
             "entity": "type"
           },
           {
-            "start": 33,
-            "end": 40,
+            "start": 32,
+            "end": 39,
             "value": "produce",
             "entity": "key"
           }
         ],
-        "text": "What is the antonym of thew word produce"
+        "text": "What is the antonym of the word produce?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "antonym",
+            "entity": "type"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "value": "waft",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the antonym of the word waft?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "antonym",
+            "entity": "type"
+          },
+          {
+            "start": 32,
+            "end": 42,
+            "value": "unrequited",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the antonym of the word unrequited?"
       },
       {
         "intent": "get_thesaurus",
@@ -1919,71 +2893,71 @@
           {
             "start": 12,
             "end": 20,
-            "value": "synonyms",
+            "value": "antonyms",
             "entity": "type"
           },
           {
             "start": 33,
             "end": 42,
-            "value": "explosive",
+            "value": "expansion",
             "entity": "key"
           }
         ],
-        "text": "What is the synonyms of the word explosive"
+        "text": "What is the antonyms of the word expansion?"
       },
       {
         "intent": "get_thesaurus",
         "entities": [
           {
             "start": 12,
-            "end": 19,
-            "value": "synonym",
+            "end": 20,
+            "value": "antonyms",
             "entity": "type"
           },
           {
-            "start": 32,
-            "end": 40,
-            "value": "initiate",
+            "start": 33,
+            "end": 42,
+            "value": "sycophant",
             "entity": "key"
           }
         ],
-        "text": "What is the synonym of the word initiate"
+        "text": "What is the antonyms of the word sycophant?"
       },
       {
         "intent": "get_thesaurus",
         "entities": [
           {
-            "start": 11,
-            "end": 18,
-            "value": "synonym",
+            "start": 12,
+            "end": 20,
+            "value": "antonyms",
             "entity": "type"
           },
           {
-            "start": 22,
-            "end": 26,
-            "value": "down",
+            "start": 33,
+            "end": 38,
+            "value": "suave",
             "entity": "key"
           }
         ],
-        "text": "What's the synonym of down"
+        "text": "What is the antonyms of the word suave?"
       },
       {
         "intent": "get_thesaurus",
         "entities": [
           {
-            "start": 11,
-            "end": 19,
-            "value": "opposite",
+            "start": 12,
+            "end": 20,
+            "value": "antonyms",
             "entity": "type"
           },
           {
-            "start": 23,
-            "end": 36,
-            "value": "understanding",
+            "start": 33,
+            "end": 46,
+            "value": "scintillating",
             "entity": "key"
           }
         ],
-        "text": "What's the opposite of understanding"
+        "text": "What is the antonyms of the word scintillating?"
       },
       {
         "intent": "get_thesaurus",
@@ -2001,7 +2975,601 @@
             "entity": "key"
           }
         ],
-        "text": "What is the opposite of forge"
+        "text": "What is the opposite of forge?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 24,
+            "end": 33,
+            "value": "propriety",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the opposite of propriety?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 24,
+            "end": 34,
+            "value": "philistine",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the opposite of philistine?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 24,
+            "end": 34,
+            "value": "narcissist",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the opposite of narcissist?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "synonym",
+            "entity": "type"
+          },
+          {
+            "start": 32,
+            "end": 40,
+            "value": "initiate",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the synonym of the word initiate?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "synonym",
+            "entity": "type"
+          },
+          {
+            "start": 32,
+            "end": 41,
+            "value": "mercenary",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the synonym of the word mercenary?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "synonym",
+            "entity": "type"
+          },
+          {
+            "start": 32,
+            "end": 37,
+            "value": "lurid",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the synonym of the word lurid?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "synonym",
+            "entity": "type"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "junket",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the synonym of the word junket?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "synonyms",
+            "entity": "type"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "explosive",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the synonyms of the word explosive?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "synonyms",
+            "entity": "type"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "idyllic",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the synonyms of the word idyllic?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "synonyms",
+            "entity": "type"
+          },
+          {
+            "start": 33,
+            "end": 43,
+            "value": "indelicate",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the synonyms of the word indelicate?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "synonyms",
+            "entity": "type"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "finagle",
+            "entity": "key"
+          }
+        ],
+        "text": "What is the synonyms of the word finagle?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "antonym",
+            "entity": "type"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "down",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the antonym of down?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "antonym",
+            "entity": "type"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "value": "fiasco",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the antonym of fiasco?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "antonym",
+            "entity": "type"
+          },
+          {
+            "start": 22,
+            "end": 32,
+            "value": "equanimity",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the antonym of equanimity?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "antonym",
+            "entity": "type"
+          },
+          {
+            "start": 22,
+            "end": 29,
+            "value": "caustic",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the antonym of caustic?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "happy",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the opposite of happy?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "value": "love",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the opposite of love?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "angry",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the opposite of angry?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 23,
+            "end": 30,
+            "value": "brusque",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the opposite of brusque?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 23,
+            "end": 36,
+            "value": "understanding",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the opposite of understanding?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "opposite",
+            "entity": "type"
+          },
+          {
+            "start": 23,
+            "end": 30,
+            "value": "bravado",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the opposite of bravado?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "synonym",
+            "entity": "type"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "down",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the synonym of down?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "synonym",
+            "entity": "type"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "angst",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the synonym of angst?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "synonym",
+            "entity": "type"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "value": "antidote",
+            "entity": "key"
+          }
+        ],
+        "text": "What's the synonym of antidote?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 12,
+            "end": 21,
+            "value": "misinform",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym for misinform?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "value": "angst",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym for angst?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "value": "anomaly",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym for anomaly?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "orange",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym of orange?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "value": "dichotomy",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym of dichotomy?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "value": "glib",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym of glib?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 20,
+            "end": 32,
+            "value": "tranquilizer",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym of the word tranquilizer?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 20,
+            "end": 30,
+            "value": "gregarious",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym of the word gregarious?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Antonym",
+            "entity": "type"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "value": "heresy",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonym of the word heresy?"
       },
       {
         "intent": "get_thesaurus",
@@ -2009,17 +3577,107 @@
           {
             "start": 0,
             "end": 8,
-            "value": "Synonyms",
+            "value": "Antonyms",
             "entity": "type"
           },
           {
-            "start": 12,
-            "end": 22,
-            "value": "Strategies",
+            "start": 13,
+            "end": 16,
+            "value": "lie",
             "entity": "key"
           }
         ],
-        "text": "Synonyms of Strategies"
+        "text": "Antonyms for lie?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Antonyms",
+            "entity": "type"
+          },
+          {
+            "start": 13,
+            "end": 22,
+            "value": "insidious",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonyms for insidious?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Antonyms",
+            "entity": "type"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "value": "litany",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonyms for litany?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Antonyms",
+            "entity": "type"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "value": "expert",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonyms of the word expert?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Antonyms",
+            "entity": "type"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "value": "ogle",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonyms of the word ogle?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Antonyms",
+            "entity": "type"
+          },
+          {
+            "start": 21,
+            "end": 33,
+            "value": "ostentatious",
+            "entity": "key"
+          }
+        ],
+        "text": "Antonyms of the word ostentatious?"
       },
       {
         "intent": "get_thesaurus",
@@ -2037,7 +3695,61 @@
             "entity": "key"
           }
         ],
-        "text": "Synonym of invent"
+        "text": "Synonym of invent?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Synonym",
+            "entity": "type"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "value": "peevish",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonym of peevish?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Synonym",
+            "entity": "type"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "value": "revel",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonym of revel?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Synonym",
+            "entity": "type"
+          },
+          {
+            "start": 11,
+            "end": 24,
+            "value": "scintillating",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonym of scintillating?"
       },
       {
         "intent": "get_thesaurus",
@@ -2055,7 +3767,97 @@
             "entity": "key"
           }
         ],
-        "text": "Synonym of the word confidence"
+        "text": "Synonym of the word confidence?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Synonym",
+            "entity": "type"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "value": "stoic",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonym of the word stoic?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Synonym",
+            "entity": "type"
+          },
+          {
+            "start": 20,
+            "end": 30,
+            "value": "ubiquitous",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonym of the word ubiquitous?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Synonyms",
+            "entity": "type"
+          },
+          {
+            "start": 12,
+            "end": 22,
+            "value": "Strategies",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonyms of Strategies?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Synonyms",
+            "entity": "type"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "value": "vile",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonyms of vile?"
+      },
+      {
+        "intent": "get_thesaurus",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Synonyms",
+            "entity": "type"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "value": "zealous",
+            "entity": "key"
+          }
+        ],
+        "text": "Synonyms of zealous?"
       },
       {
         "intent": "get_thesaurus",
@@ -2073,7 +3875,1105 @@
             "entity": "key"
           }
         ],
-        "text": "Synonyms of discover"
+        "text": "Synonyms of discover?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 10,
+            "end": 15,
+            "value": "pound",
+            "entity": "base"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "value": "kilograms",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1 pound to kilograms"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "10",
+            "entity": "amount"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "pounds",
+            "entity": "base"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "grams",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 10 pounds to grams"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "1000",
+            "entity": "amount"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "value": "pounds",
+            "entity": "base"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "value": "ounces",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1000 pounds to ounces"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "100000",
+            "entity": "amount"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "value": "pounds",
+            "entity": "base"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "value": "grams",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 100000 pounds to grams"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 10,
+            "end": 15,
+            "value": "ounce",
+            "entity": "base"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "value": "kilograms",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1 ounce to kilograms"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "12",
+            "entity": "amount"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "ounces",
+            "entity": "base"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "grams",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 12 ounces to grams"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "1548",
+            "entity": "amount"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "value": "ounces",
+            "entity": "base"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "value": "pounds",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1548 ounces to pounds"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "123895",
+            "entity": "amount"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "value": "ounces",
+            "entity": "base"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "value": "grams",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 123895 ounces to grams"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "value": "minute",
+            "entity": "base"
+          },
+          {
+            "start": 20,
+            "end": 27,
+            "value": "seconds",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1 minute to seconds"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "25",
+            "entity": "amount"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "value": "hours",
+            "entity": "base"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "value": "days",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 25 hours to days"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "2548",
+            "entity": "amount"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "value": "minute",
+            "entity": "base"
+          },
+          {
+            "start": 23,
+            "end": 30,
+            "value": "seconds",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 2548 minute to seconds"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "208796",
+            "entity": "amount"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "value": "seconds",
+            "entity": "base"
+          },
+          {
+            "start": 26,
+            "end": 31,
+            "value": "weeks",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 208796 seconds to weeks"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "value": "minute",
+            "entity": "base"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "value": "years",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1 minute to years"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "66",
+            "entity": "amount"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "value": "hours",
+            "entity": "base"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "value": "days",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 66 hours to days"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "1000",
+            "entity": "amount"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "value": "day",
+            "entity": "base"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "value": "years",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1000 day to years"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "754193",
+            "entity": "amount"
+          },
+          {
+            "start": 15,
+            "end": 27,
+            "value": "milliseconds",
+            "entity": "base"
+          },
+          {
+            "start": 31,
+            "end": 38,
+            "value": "minutes",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 754193 milliseconds to minutes"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "value": "yard",
+            "entity": "base"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "value": "meters",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1 yard to meters"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "69",
+            "entity": "amount"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "value": "miles",
+            "entity": "base"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "value": "feet",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 69 miles to feet"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "1000",
+            "entity": "amount"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "value": "feet",
+            "entity": "base"
+          },
+          {
+            "start": 21,
+            "end": 31,
+            "value": "kilometers",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1000 feet to kilometers"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "328467",
+            "entity": "amount"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "value": "meters",
+            "entity": "base"
+          },
+          {
+            "start": 25,
+            "end": 35,
+            "value": "kilometesr",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 328467 meters to kilometesr"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "centimer",
+            "entity": "base"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "yards",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1 centimer to yards"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "87",
+            "entity": "amount"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "value": "mile",
+            "entity": "base"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "value": "inches",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 87 mile to inches"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "1000",
+            "entity": "amount"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "value": "yard",
+            "entity": "base"
+          },
+          {
+            "start": 21,
+            "end": 32,
+            "value": "centimeters",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1000 yard to centimeters"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": "inches",
+            "entity": "base"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "value": "feet",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert [426589] (amount) inches to feet"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "value": "cup",
+            "entity": "base"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "value": "fluids",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1 cup to fluids"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "91",
+            "entity": "amount"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "value": "pints",
+            "entity": "base"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "value": "cups",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 91 pints to cups"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "1000",
+            "entity": "amount"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "value": "quarts",
+            "entity": "base"
+          },
+          {
+            "start": 23,
+            "end": 30,
+            "value": "gallons",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1000 quarts to gallons"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "100000",
+            "entity": "amount"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "value": "fluids",
+            "entity": "base"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "value": "quarts",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 100000 fluids to quarts"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "value": "gallon",
+            "entity": "base"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "value": "fluids",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 1 gallon to fluids"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "15",
+            "entity": "amount"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "value": "cups",
+            "entity": "base"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "value": "quarts",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 15 cups to quarts"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "7896",
+            "entity": "amount"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "value": "quarts",
+            "entity": "base"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "pints",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 7896 quarts to pints"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "753695",
+            "entity": "amount"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "value": "pints",
+            "entity": "base"
+          },
+          {
+            "start": 24,
+            "end": 31,
+            "value": "gallons",
+            "entity": "conversion"
+          }
+        ],
+        "text": "Convert 753695 pints to gallons"
+      },
+      {
+        "intent": "unit_conversion",
+        "text": "How many [seconds] (conversion) in a [minute] (base)?"
+      },
+      {
+        "intent": "unit_conversion",
+        "text": "How many [hours] (conversion) in a [year] (base)?"
+      },
+      {
+        "intent": "unit_conversion",
+        "text": "How many [minutes] (conversion) in a [hour] (base)?"
+      },
+      {
+        "intent": "unit_conversion",
+        "text": "How many [feet] (conversion) in a [mile] (base)?"
+      },
+      {
+        "intent": "unit_conversion",
+        "text": "How many [meters] (conversion) in a [kilometer] (base)?"
+      },
+      {
+        "intent": "unit_conversion",
+        "text": "How many [inches] (conversion) in a [yard] (base)?"
+      },
+      {
+        "intent": "unit_conversion",
+        "text": "How many [cups] (conversion) in a [gallon] (base)?"
+      },
+      {
+        "intent": "unit_conversion",
+        "text": "How many [fluids] (conversion) in a [pint] (base)?"
+      },
+      {
+        "intent": "unit_conversion",
+        "text": "How many [ounces] (conversion) in a [pound] (base)?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 37,
+            "end": 38,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 39,
+            "end": 45,
+            "value": "minute",
+            "entity": "base"
+          }
+        ],
+        "text": "How many [seconds] (conversion) in a 1 minute?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 35,
+            "end": 36,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "value": "year",
+            "entity": "base"
+          }
+        ],
+        "text": "How many [hours] (conversion) in a 1 year?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 37,
+            "end": 39,
+            "value": "10",
+            "entity": "amount"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "value": "hour",
+            "entity": "base"
+          }
+        ],
+        "text": "How many [minutes] (conversion) in a 10 hour?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 34,
+            "end": 36,
+            "value": "10",
+            "entity": "amount"
+          },
+          {
+            "start": 37,
+            "end": 42,
+            "value": "miles",
+            "entity": "base"
+          }
+        ],
+        "text": "How many [feet] (conversion) in a 10 miles?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 36,
+            "end": 37,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 38,
+            "end": 47,
+            "value": "kilometer",
+            "entity": "base"
+          }
+        ],
+        "text": "How many [meters] (conversion) in a 1 kilometer?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 36,
+            "end": 39,
+            "value": "100",
+            "entity": "amount"
+          },
+          {
+            "start": 40,
+            "end": 45,
+            "value": "yards",
+            "entity": "base"
+          }
+        ],
+        "text": "How many [inches] (conversion) in a 100 yards?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 34,
+            "end": 38,
+            "value": "1000",
+            "entity": "amount"
+          },
+          {
+            "start": 39,
+            "end": 46,
+            "value": "gallons",
+            "entity": "base"
+          }
+        ],
+        "text": "How many [cups] (conversion) in a 1000 gallons?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 36,
+            "end": 37,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "value": "pint",
+            "entity": "base"
+          }
+        ],
+        "text": "How many [fluids] (conversion) in a 1 pint?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "10000",
+            "entity": "amount"
+          },
+          {
+            "start": 42,
+            "end": 48,
+            "value": "pounds",
+            "entity": "base"
+          }
+        ],
+        "text": "How many [ounces] (conversion) in a 10000 pounds?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "1",
+            "entity": "amount "
+          },
+          {
+            "start": 2,
+            "end": 7,
+            "value": "ounce",
+            "entity": "base"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "value": "cups",
+            "entity": "conversion"
+          }
+        ],
+        "text": "1 ounce is how many cups?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "10",
+            "entity": "amount"
+          },
+          {
+            "start": 3,
+            "end": 9,
+            "value": "inches",
+            "entity": "base"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "miles",
+            "entity": "conversion"
+          }
+        ],
+        "text": "10 inches is how many miles?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "1000",
+            "entity": "amount"
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "value": "pints",
+            "entity": "base"
+          },
+          {
+            "start": 23,
+            "end": 30,
+            "value": "gallons",
+            "entity": "conversion"
+          }
+        ],
+        "text": "1000 pints is how many gallons?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "1",
+            "entity": "amount"
+          },
+          {
+            "start": 27,
+            "end": 32,
+            "value": "grams",
+            "entity": "conversion"
+          }
+        ],
+        "text": "1 pound](base) is how many grams?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "30",
+            "entity": "amount"
+          },
+          {
+            "start": 3,
+            "end": 14,
+            "value": "centimeters",
+            "entity": "base"
+          },
+          {
+            "start": 27,
+            "end": 32,
+            "value": "yards",
+            "entity": "conversion"
+          }
+        ],
+        "text": "30 centimeters is how many yards?"
+      },
+      {
+        "intent": "unit_conversion",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "4125",
+            "entity": "amount"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "value": "cups",
+            "entity": "base"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "pints",
+            "entity": "conversion"
+          }
+        ],
+        "text": "4125 cups is how many pints?"
       }
     ],
     "regex_features": [],
