@@ -1,7 +1,7 @@
 
 # AWS IAM permissioned keys just for Amazon Polly
 POLLY_ACCESS_KEY_ID = ""
-POLLY_SECRET_ACCESS_KEY = "r19ea1N+/zjIMWhkN4wOOyukd5iW6grhw8"
+POLLY_SECRET_ACCESS_KEY = ""
 
 # Open Weather Map Key
 OWM_DEFAULT_KEY = ""
@@ -11,9 +11,12 @@ ZOMATO_KEY = ""
 
 # Yelp API Key for restaurant data
 YELP_CLIENT_ID = ""
-YELP_API_KEY = "-OZ4h5YFXHYx"
+YELP_API_KEY = ""
 
 
 # Spotify Client Keys
 SPOTIFY_CLIENT_ID = ""
 SPOTIFY_CLIENT_SECRET = ""
+
+# Crypto Comare Keys
+CRYPTOC_KEY = ""

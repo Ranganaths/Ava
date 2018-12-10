@@ -22,6 +22,16 @@ With a trained model we can now pass the speech recognition text into a Rasa int
 
 Now that Ava has responded she returns to an active listening stage awaiting her wake up command, "hey ava" and we can begin the process all over again!
 
+## Get Started
+
+Ava requires two things to get running. One, the [ava_settings.py](https://github.com/jmcnab57/Ava/blob/master/ava_settings.py) file needs to have the right default settings configured. Here most importantly you set the wake command as well as location information that is used by various API's. Secondly, Ava requires API key's for access to certain services, view the below Built With section to view what services are used. A [sample_api_key.py](https://github.com/jmcnab57/Ava/blob/master/sample_api_keys.py) file is included where the empty strings can be replaced with corresponding API key's. This does require signing up for services. If possible I try to make the skill "offline" but many just require API data. Once the keys are saved, the file needs to be renamed to [ava_api_keys.py]() as this is the name that is looked for when importing the keys.
+
+Once the settings and keys files are set. You just need to run Ava via the [ava_main.py](https://github.com/jmcnab57/Ava/blob/master/ava_main.py) file. Of course make sure your microphone is working and active.
+
+```
+python ava_main.py
+```
+
 ## Available and Planned Skills
 
 - ~~Get Status: Ava how are you doing?~~
